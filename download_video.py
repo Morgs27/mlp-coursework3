@@ -14,5 +14,5 @@ def download_video(url, output_path="video"):
         ydl.download([url])
 
 if __name__ == "__main__":
-    VIDEO_URL = "https://www.youtube.com/watch?v=6_vQiDlZ10Y"
+    VIDEO_URL = "https://www.youtube.com/watch?v=LL-GWqNUmZ0"
     download_video(VIDEO_URL)
