@@ -1,0 +1,7 @@
+yt-dlp
+opencv-python-headless
+numpy
+pandas
+librosa
+scipy
+easyocr
