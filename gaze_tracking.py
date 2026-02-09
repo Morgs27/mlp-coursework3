@@ -31,21 +31,84 @@ def get_detector():
 def get_pixel_coords(landmark, image_shape):
     return int(landmark.x * image_shape[1]), int(landmark.y * image_shape[0])
 
-def get_gaze_vector(face_landmarks, eye_indices, iris_indices, image_shape):
-    p1 = face_landmarks[eye_indices[0]] # Corner 1
-    p2 = face_landmarks[eye_indices[1]] # Corner 2
+def get_3d_gaze_vector(face_landmarks, eye_indices, iris_indices, transform_matrix=None):
+    # 1. Calculate Face Orientation Frame
+    # Define landmarks for Head Frame
+    # Lateral: 454 (Left Ear tragus) - 234 (Right Ear tragus)
+    # Vertical: 10 (Top Hairline/Forehead) - 152 (Chin)
     
-    eye_center_x = (p1.x + p2.x) / 2
-    eye_center_y = (p1.y + p2.y) / 2
+    p_left = np.array([face_landmarks[454].x, face_landmarks[454].y, face_landmarks[454].z])
+    p_right = np.array([face_landmarks[234].x, face_landmarks[234].y, face_landmarks[234].z])
+    p_top = np.array([face_landmarks[10].x, face_landmarks[10].y, face_landmarks[10].z])
+    p_bottom = np.array([face_landmarks[152].x, face_landmarks[152].y, face_landmarks[152].z])
     
-    iris_center = face_landmarks[iris_indices[0]]
+    # Head X Axis (Right)
+    head_x = p_right - p_left
+    head_x /= np.linalg.norm(head_x)
     
-    # Gaze vector relative to eye width/height to be somewhat invariant to distance?
-    # For now, just raw relative coordinates
-    dx = iris_center.x - eye_center_x
-    dy = iris_center.y - eye_center_y
+    # Head Y Axis (Up - relative to face) roughly
+    # Actually, let's use the cross product to be sure.
+    # Vector top->bottom is roughly local Down (-Y) or Up?
+    # Landmarks: 10 is top, 152 is bottom. Vector 10->152 is DOWN.
+    # Let's define Head_Y as UP. So 152->10.
+    head_y_approx = p_top - p_bottom
+    head_y_approx /= np.linalg.norm(head_y_approx)
     
-    return (dx, dy)
+    # Head Forward (Z) = Cross(X, Y)
+    # Right x Up = Forward (Standard RHS?)
+    # Right (x) cross Up (y) = Out of Face (z) ?
+    # Let's check: x=(1,0,0), y=(0,1,0) -> z=(0,0,1)
+    head_forward = np.cross(head_x, head_y_approx)
+    head_forward /= np.linalg.norm(head_forward)
+    
+    # Re-orthogonalize Y
+    head_y = np.cross(head_forward, head_x)
+    head_y /= np.linalg.norm(head_y)
+    
+    # 2. Estimate Scale (IPD)
+    # Left Eye Center: 468 (Left Iris)
+    # Right Eye Center: 473 (Right Iris)
+    # Or use corners mean
+    
+    # Calculate Mean Eye Centers (Corners)
+    def get_mean_point(indices):
+        xs = [face_landmarks[i].x for i in indices]
+        ys = [face_landmarks[i].y for i in indices]
+        zs = [face_landmarks[i].z for i in indices]
+        return np.array([np.mean(xs), np.mean(ys), np.mean(zs)])
+    
+    left_enc_surf = get_mean_point(eye_indices) # Surface center
+    
+    # Calculate IPD using Iris centers for scale
+    p_left_iris = np.array([face_landmarks[468].x, face_landmarks[468].y, face_landmarks[468].z])
+    p_right_iris = np.array([face_landmarks[473].x, face_landmarks[473].y, face_landmarks[473].z])
+    ipd = np.linalg.norm(p_left_iris - p_right_iris)
+    
+    # ... (inside get_3d_gaze_vector)
+    # 3. Estimate True Eyeball Center
+    # Shift backwards by K * IPD
+    # Standard anatomical ratio: Eye center depth / IPD approx 13mm / 64mm ~= 0.2
+    # But since landmarks are surface, we might need slightly more?
+    # Let's try 0.25 to start
+    K_depth = 0.3 # Moving eye center back
+    center_offset = head_forward * (ipd * K_depth) # Use positive head_forward to go deeper (IN)
+    
+    # We apply this offset to the surface eye center
+    true_eye_center = left_enc_surf + center_offset
+        
+    # 4. Gaze Vector
+    # Current Iris position
+    # Iris landmarks are on the surface of the cornea (bulging out)
+    # So Iris - True Center is the optical axis
+    
+    # Iris Center
+    iris_center = get_mean_point(iris_indices)
+    
+    gaze_vector = iris_center - true_eye_center
+    
+    gaze_vector /= np.linalg.norm(gaze_vector)
+    
+    return gaze_vector, true_eye_center, iris_center
 
 def process_image(image_path, filename=None, save_output=True):
     if filename is None:
@@ -67,32 +130,48 @@ def process_image(image_path, filename=None, save_output=True):
     face_landmarks = detection_result.face_landmarks[0]
     h, w, _ = image.shape
 
-    # Eye indices
+    # Eye indices (Corners)
     LEFT_EYE_INDICES = [33, 133]
-    LEFT_IRIS = [468, 469, 470, 471, 472]
     RIGHT_EYE_INDICES = [362, 263]
+    
+    # Iris indices
+    LEFT_IRIS = [468, 469, 470, 471, 472]
     RIGHT_IRIS = [473, 474, 475, 476, 477]
 
-    left_gaze = get_gaze_vector(face_landmarks, LEFT_EYE_INDICES, LEFT_IRIS, image.shape)
-    right_gaze = get_gaze_vector(face_landmarks, RIGHT_EYE_INDICES, RIGHT_IRIS, image.shape)
+    left_gaze, left_eye_center, left_iris_center = get_3d_gaze_vector(face_landmarks, LEFT_EYE_INDICES, LEFT_IRIS)
+    right_gaze, right_eye_center, right_iris_center = get_3d_gaze_vector(face_landmarks, RIGHT_EYE_INDICES, RIGHT_IRIS)
     
     if save_output:
         # Draw visualization
-        # ... (drawing logic similar to before, can be kept or simplified)
-        # Re-implement drawing for saving output
         for idx in LEFT_IRIS + RIGHT_IRIS:
             point = face_landmarks[idx]
-            cv2.circle(image, get_pixel_coords(point, image.shape), 2, (0, 255, 0), -1, cv2.LINE_AA)
+            cv2.circle(image, get_pixel_coords(point, image.shape), 1, (0, 255, 0), -1, cv2.LINE_AA)
 
-        def draw_gaze(gaze, eye_indices, iris_indices):
-            iris_center = face_landmarks[iris_indices[0]]
-            start_point = get_pixel_coords(iris_center, image.shape)
-            # Scale vector for visualization
-            end_point = (int(start_point[0] + gaze[0] * w * 10), int(start_point[1] + gaze[1] * h * 10))
-            cv2.arrowedLine(image, start_point, end_point, (0, 0, 255), 2, cv2.LINE_AA)
+        def draw_gaze_3d(gaze_vec, iris_center_3d):
+             # We project the start and end points of the gaze vector back to 2D
+             # Start point is the iris center
+             start_point_3d = iris_center_3d
+             # End point is scaled along the gaze vector
+             scale = 0.5 # Arbitrary scale for visualization length
+             end_point_3d = start_point_3d + gaze_vec * scale
+             
+             # Simple orthographic projection (ignoring depth perspective for drawing on 2D image)
+             # Since landmarks are normalized [0, 1], we map to pixel coords
+             
+             start_2d = (int(start_point_3d[0] * w), int(start_point_3d[1] * h))
+             
+             # For the end point, we need to be careful. The Z coordinate in MediaPipe is relative to the image plane? 
+             # MediaPipe Z is "depth", where the origin is at the center of the head approx?
+             # For visualization "lazers", we mainly care about x and y direction in the image plane
+             # But the 3D vector allows us to see "into" the image.
+             # Let's simple project the 3D end point to 2D x,y
+             
+             end_2d = (int(end_point_3d[0] * w), int(end_point_3d[1] * h))
+             
+             cv2.arrowedLine(image, start_2d, end_2d, (0, 0, 255), 2, cv2.LINE_AA)
 
-        draw_gaze(left_gaze, LEFT_EYE_INDICES, LEFT_IRIS)
-        draw_gaze(right_gaze, RIGHT_EYE_INDICES, RIGHT_IRIS)
+        draw_gaze_3d(left_gaze, left_iris_center)
+        draw_gaze_3d(right_gaze, right_iris_center)
 
         if not os.path.exists(OUTPUT_DIR):
             os.makedirs(OUTPUT_DIR)
@@ -100,32 +179,12 @@ def process_image(image_path, filename=None, save_output=True):
         output_path = os.path.join(OUTPUT_DIR, filename)
         cv2.imwrite(output_path, image)
         
-        # Zoom crop logic...
-        x_min, y_min = w, h
-        x_max, y_max = 0, 0
-        for point in face_landmarks:
-            x, y = get_pixel_coords(point, image.shape)
-            if x < x_min: x_min = x
-            if x > x_max: x_max = x
-            if y < y_min: y_min = y
-            if y > y_max: y_max = y
-        
-        padding = 50
-        x_min = max(0, x_min - padding)
-        y_min = max(0, y_min - padding)
-        x_max = min(w, x_max + padding)
-        y_max = min(h, y_max + padding)
-        
-        cropped_face = image[y_min:y_max, x_min:x_max]
-        crop_output_path = os.path.join(OUTPUT_DIR, f"crop_{filename}")
-        if cropped_face.size > 0:
-            cv2.imwrite(crop_output_path, cropped_face)
-
     return {
         'left_gaze': left_gaze,
         'right_gaze': right_gaze,
         'filename': filename
     }
+
 
 if __name__ == "__main__":
     if not os.path.exists(MODEL_PATH):
