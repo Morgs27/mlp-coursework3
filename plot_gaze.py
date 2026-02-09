@@ -81,6 +81,7 @@ def main():
     plt.ylabel("Vertical Gaze (Normalized)")
     plt.axhline(0, color='gray', linestyle='--', alpha=0.5)
     plt.axvline(0, color='gray', linestyle='--', alpha=0.5)
+    plt.gca().invert_yaxis() # Invert Y axis so Negative (Up) is Top, Positive (Down) is Bottom
     plt.legend()
     plt.grid(True)
     plt.legend()

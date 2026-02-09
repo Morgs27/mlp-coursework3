@@ -108,7 +108,7 @@ def get_3d_gaze_vector(face_landmarks, eye_indices, iris_indices, transform_matr
     
     gaze_vector /= np.linalg.norm(gaze_vector)
     
-    return gaze_vector, true_eye_center, iris_center
+    return gaze_vector, true_eye_center, iris_center, (head_x, head_y, head_forward)
 
 def process_image(image_path, filename=None, save_output=True):
     if filename is None:
@@ -138,8 +138,11 @@ def process_image(image_path, filename=None, save_output=True):
     LEFT_IRIS = [468, 469, 470, 471, 472]
     RIGHT_IRIS = [473, 474, 475, 476, 477]
 
-    left_gaze, left_eye_center, left_iris_center = get_3d_gaze_vector(face_landmarks, LEFT_EYE_INDICES, LEFT_IRIS)
-    right_gaze, right_eye_center, right_iris_center = get_3d_gaze_vector(face_landmarks, RIGHT_EYE_INDICES, RIGHT_IRIS)
+    left_gaze, left_eye_center, left_iris_center, left_head_pose = get_3d_gaze_vector(face_landmarks, LEFT_EYE_INDICES, LEFT_IRIS)
+    right_gaze, right_eye_center, right_iris_center, right_head_pose = get_3d_gaze_vector(face_landmarks, RIGHT_EYE_INDICES, RIGHT_IRIS)
+    
+    # Use left head pose for visualization (it's the same head)
+    head_x, head_y, head_forward = left_head_pose
     
     if save_output:
         # Draw visualization
@@ -155,23 +158,40 @@ def process_image(image_path, filename=None, save_output=True):
              scale = 0.5 # Arbitrary scale for visualization length
              end_point_3d = start_point_3d + gaze_vec * scale
              
-             # Simple orthographic projection (ignoring depth perspective for drawing on 2D image)
-             # Since landmarks are normalized [0, 1], we map to pixel coords
-             
              start_2d = (int(start_point_3d[0] * w), int(start_point_3d[1] * h))
-             
-             # For the end point, we need to be careful. The Z coordinate in MediaPipe is relative to the image plane? 
-             # MediaPipe Z is "depth", where the origin is at the center of the head approx?
-             # For visualization "lazers", we mainly care about x and y direction in the image plane
-             # But the 3D vector allows us to see "into" the image.
-             # Let's simple project the 3D end point to 2D x,y
-             
              end_2d = (int(end_point_3d[0] * w), int(end_point_3d[1] * h))
              
              cv2.arrowedLine(image, start_2d, end_2d, (0, 0, 255), 2, cv2.LINE_AA)
 
         draw_gaze_3d(left_gaze, left_iris_center)
         draw_gaze_3d(right_gaze, right_iris_center)
+        
+        # Draw Head Pose
+        # Origin: Nose tip (landmark 1)
+        nose_idx = 4 # Tip of nose
+        nose_lm = face_landmarks[nose_idx]
+        nose_3d = np.array([nose_lm.x, nose_lm.y, nose_lm.z])
+        nose_2d = get_pixel_coords(nose_lm, image.shape)
+        
+        scale_axis = 0.2
+        
+        # X Axis (Red) - Right
+        end_x_3d = nose_3d + head_x * scale_axis
+        end_x_2d = (int(end_x_3d[0] * w), int(end_x_3d[1] * h))
+        cv2.arrowedLine(image, nose_2d, end_x_2d, (0, 0, 255), 2, cv2.LINE_AA)
+        
+        # Y Axis (Green) - Up
+        end_y_3d = nose_3d + head_y * scale_axis
+        end_y_2d = (int(end_y_3d[0] * w), int(end_y_3d[1] * h))
+        cv2.arrowedLine(image, nose_2d, end_y_2d, (0, 255, 0), 2, cv2.LINE_AA)
+        
+        # Z Axis (Blue) - Forward
+        # head_forward points IN (+Z). We want to draw Look Direction (-head_forward).
+        # Actually, let's just draw the forward vector coming out of the nose.
+        # If head_forward points IN, -head_forward points OUT.
+        end_z_3d = nose_3d - head_forward * scale_axis
+        end_z_2d = (int(end_z_3d[0] * w), int(end_z_3d[1] * h))
+        cv2.arrowedLine(image, nose_2d, end_z_2d, (255, 0, 0), 2, cv2.LINE_AA)
 
         if not os.path.exists(OUTPUT_DIR):
             os.makedirs(OUTPUT_DIR)
