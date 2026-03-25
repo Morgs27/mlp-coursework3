@@ -59,7 +59,7 @@ def plot_for_player(player_code, data, output_suffix):
         color = score_color_map[score]
         
         plt.scatter(x, y, color=color, marker=marker, s=100, alpha=0.8, edgecolor='k', zorder=3)
-        plt.text(x, y, score, fontsize=9, ha='right', va='bottom', zorder=4)
+        # plt.text(x, y, score, fontsize=9, ha='right', va='bottom', zorder=4) # Removed labels for individual points
 
     # Plot Average Blobs
     for score in scores:
@@ -72,26 +72,28 @@ def plot_for_player(player_code, data, output_suffix):
         color = score_color_map[score]
         
         plt.scatter(avg_x, avg_y, color=color, s=2000, alpha=0.2, marker='o', edgecolor='none', zorder=1)
+        # Label the average blob - Move to LEFT
+        plt.text(avg_x + 0.015, avg_y, f"{score}", fontsize=14, ha='right', va='center', color='black', fontweight='bold', zorder=5)
 
     # Legend
     from matplotlib.lines import Line2D
-    score_handles = [Line2D([0], [0], marker='o', color='w', markerfacecolor=c, markersize=10, label=s) for s, c in score_color_map.items()]
-    view_handles = [Line2D([0], [0], marker=m, color='w', markerfacecolor='k', markersize=10, label=v.upper()) for v, m in view_markers.items() if v != 'default']
+    score_handles = [Line2D([0], [0], marker='o', color='w', markerfacecolor=c, markersize=12, label=s) for s, c in score_color_map.items()]
+    view_handles = [Line2D([0], [0], marker=m, color='w', markerfacecolor='k', markersize=12, label=v.upper()) for v, m in view_markers.items() if v != 'default' and v != 'mb']
     
-    plt.legend(handles=score_handles + view_handles, title="Score & View", loc='best')
+    plt.legend(handles=score_handles + view_handles, title="Score & View", loc='best', fontsize='x-large', title_fontsize='x-large')
 
     player_name = "Anderson" if player_code == 'a' else "Van Veen" if player_code == 'v' else player_code
-    plt.title(f"3D Gaze Vectors: {player_name}")
-    plt.xlabel("Horizontal Gaze (Normalized)")
-    plt.ylabel("Vertical Gaze (Normalized)")
+    plt.title(f"3D Gaze Vectors: {player_name}", fontsize=20)
+    plt.xlabel("Horizontal Gaze (Normalized)", fontsize=16)
+    plt.ylabel("Vertical Gaze (Normalized)", fontsize=16)
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
     plt.axhline(0, color='gray', linestyle='--', alpha=0.5)
     plt.axvline(0, color='gray', linestyle='--', alpha=0.5)
     plt.gca().invert_yaxis() 
     
-    # Set X axis limits to zoom in (User request: start from -0.1)
-    # Since we want -0.1 on Left and more negative on Right (Inverted behavior)
-    # We set xlim(high, low)
-    plt.xlim(-0.1, -0.45)
+    # Set X axis limits to zoom in (User request: start from -0.15)
+    plt.xlim(-0.15, -0.45)
     
     # plt.gca().invert_xaxis() # Already handled by xlim if we set it right? 
     # Actually if we set xlim(-0.1, -0.45), matplotlib puts -0.45 on left?
@@ -192,8 +194,16 @@ def plot_combined_averages(data):
         player_center_y = np.mean([d['y'] for d in player_data])
         
         # Plot Center
-        # marker = player_markers.get(player, 'x')
-        # plt.scatter(player_center_x, player_center_y, color='k', marker=marker, s=100, label=f"Center ({player})", zorder=5)
+        center_marker = 'P' if player == 'a' else 'X' # Plus for Anderson, X for Van Veen? Or just a common 'Star'?
+        # Let's use a common distinctive marker for center, maybe just different colors or shapes again.
+        # User said "make the 'center' have a distinct point"
+        # Let's use a Black 'X' for both, or maybe match the player shape but black and hollow?
+        # Let's try a bold Black Plus '+' for Anderson and Black Cross 'x' for Van Veen to distinguish centers if they are different.
+        # Or simpler: A large Black Star for both? But their centers are different (relative to origin, though this plot is relative to center? No, it's relative to center logic but plotted in absolute coordinates).
+        # Actually the plot title says "Relative to Center" but we are plotting absolute coordinates and drawing lines FROM center.
+        
+        center_shape = 'P' if player == 'a' else 'X'
+        plt.scatter(player_center_x, player_center_y, color='black', marker=center_shape, s=200, label=f"Center ({player})", zorder=6)
         
         # For this player, find average for each score
         player_scores = sorted(list(set(d['score'] for d in player_data)))
@@ -210,7 +220,8 @@ def plot_combined_averages(data):
             marker = player_markers.get(player, 'x')
             
             # Draw dotted line from center to this score average
-            plt.plot([player_center_x, avg_x], [player_center_y, avg_y], color=color, linestyle=':', alpha=0.5, zorder=2)
+            # User request: make the dashed lines more visible (wider)
+            plt.plot([player_center_x, avg_x], [player_center_y, avg_y], color=color, linestyle='--', linewidth=2, alpha=0.7, zorder=2)
             
             plt.scatter(avg_x, avg_y, color=color, marker=marker, s=300, alpha=0.9, edgecolor='k', zorder=3)
             
@@ -233,35 +244,41 @@ def plot_combined_averages(data):
                 # If exactly at center (unlikely), offsets 0
                 off_x, off_y = 0.01, 0.01
                 
-            plt.text(avg_x + off_x, avg_y + off_y, f"{score}", fontsize=9, ha='center', va='center', color='black', fontweight='bold', zorder=5)
+            # Better label placement: Put text inside marker if it fits, or just next to it
+            # Text color contrast?
+            # Let's just put it slightly offset
+            # User request: Move average labels to the left of the indicators
+            plt.text(avg_x + 0.01, avg_y, f"{score}", fontsize=14, ha='right', va='center', color='black', fontweight='bold', zorder=5)
 
 
     # Legend construction
     from matplotlib.lines import Line2D
     # Score Legend (Colors)
-    score_handles = [Line2D([0], [0], marker='o', color='w', markerfacecolor=c, markersize=10, label=s) for s, c in score_color_map.items()]
+    score_handles = [Line2D([0], [0], marker='o', color='w', markerfacecolor=c, markersize=12, label=s) for s, c in score_color_map.items()]
     
     # Player Legend (Markers)
     player_handles = [
-        Line2D([0], [0], marker='o', color='w', markerfacecolor='gray', markersize=10, label='Anderson'),
-        Line2D([0], [0], marker='s', color='w', markerfacecolor='gray', markersize=10, label='Van Veen')
+        Line2D([0], [0], marker='o', color='w', markerfacecolor='gray', markersize=12, label='Anderson'),
+        Line2D([0], [0], marker='s', color='w', markerfacecolor='gray', markersize=12, label='Van Veen'),
+        Line2D([0], [0], marker='P', color='black', markerfacecolor='black', markersize=12, linestyle='None', label='Center (Anderson)'),
+        Line2D([0], [0], marker='X', color='black', markerfacecolor='black', markersize=12, linestyle='None', label='Center (Van Veen)')
     ]
     
-    plt.legend(handles=score_handles + player_handles, title="Score & Player", loc='best', fontsize='small', ncol=2)
+    plt.legend(handles=score_handles + player_handles, title="Score & Player", loc='best', fontsize='x-large', title_fontsize='x-large', ncol=2)
 
-    plt.title("Combined Average Gaze Vectors: Anderson vs Van Veen (Relative to Center)")
-    plt.xlabel("Horizontal Gaze (Normalized)")
-    plt.ylabel("Vertical Gaze (Normalized)")
+    plt.title("Combined Average Gaze Vectors: Anderson vs Van Veen (Relative to Center)", fontsize=20)
+    plt.xlabel("Horizontal Gaze (Normalized)", fontsize=16)
+    plt.ylabel("Vertical Gaze (Normalized)", fontsize=16)
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=14)
     plt.axhline(0, color='gray', linestyle='--', alpha=0.5)
     plt.axvline(0, color='gray', linestyle='--', alpha=0.5)
     
     # Invert Y axis so Negative (Up) is Top
     plt.gca().invert_yaxis() 
     
-    # Set X axis limits to zoom in (User request: start from -0.1)
-    # Since we want -0.1 on Left and more negative on Right (Inverted behavior)
-    # We set xlim(high, low)
-    plt.xlim(-0.1, -0.45)
+    # Set X axis limits to zoom in (User request: start from -0.15)
+    plt.xlim(-0.15, -0.45)
     
     plt.grid(True)
     
