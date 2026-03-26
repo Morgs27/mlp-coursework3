@@ -7,7 +7,7 @@ The next step is to take this proof on concept and merge it in with a larger aca
 
 This will involve:
 1. Build out a module that takes a frame and returns a set of gaze information as described bellow
-2. Create a dataset of frames from right before a throw from a set of video matches. 
+2. Create a dataset of frames from right before a throw from a set of video matches. Described in more detail bellow. 
 3. Pass this dataset through the module 1. to produce a dataset of gaze vectors to score etc as described in the labeling bellow
 4. Train a basic linear regression model to predict the resulting score from the gaze vectors
 5. Run some basic evaluation on the model & the dataset. Keep some of the original dataset for testing.
@@ -23,6 +23,24 @@ Number 6 should be a very simple UI that imports some basic UI library.
 Number 7 is not too important for now. 
 
 Each section should be very clean code as the code will be published and in it's own folder. Don't use the code currently in place. 
+
+# Number 2 the frame data collection
+
+These 4 youtube videos (can be downloaded using the download_video.py script) are live broadcasts of darts games. This is very messy with multiple camera angles and warmups, some shots don't have the players faces beforehand & ads show up. To make this easier to collect data manually we could create some sort of tool. In this tool I could flick through the frames of the video and when I see that the there is a good opportunity to take a snapshot I just click. That screenshots is then saved with it's timestamp in the video. Based on that timestamp and the socres dataset (these matches should be in that) the score, player id, match id etc can be extracted. 
+
+The gaze annotation will need to support that the players face may only be on a small portion of the captured screen. 
+
+Littler v Van Veen 2026 FINAL World Darts Championship
+https://www.youtube.com/watch?v=EP1aNxTksCc
+
+Van Veen v Anderson SF 2026 World Darts Championship
+https://www.youtube.com/watch?v=LL-GWqNUmZ0&t=1380s
+
+Littler v Searle SF 2026 World Darts Championship
+https://www.youtube.com/watch?v=aF7Gk1ScqbU
+
+Anderson v Hood QF 2026 World Darts Championship
+https://www.youtube.com/watch?v=p-u9VVLM-yo
 
 # Details
 
@@ -45,8 +63,6 @@ maybe left-right eye agreement
 maybe detector confidence / valid-face flag
 
 # Data collection
-
-I'll manually add videos in the /video folder. 
 
 An api of darts matches with scores and player can be found by using the following code:
 

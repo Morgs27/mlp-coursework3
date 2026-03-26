@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+data/*.sqlite3
+data/cache/*
+data/processed/*
+data/captures/*
+data/videos/*
+
+!data/cache/.gitkeep
+!data/processed/.gitkeep
+!data/captures/.gitkeep
+!data/videos/.gitkeep

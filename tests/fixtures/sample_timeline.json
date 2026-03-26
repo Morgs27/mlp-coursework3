@@ -1,0 +1,103 @@
+{
+  "sport_event": {
+    "id": "sr:sport_event:test-1",
+    "competitors": [
+      {
+        "id": "sr:competitor:home-1",
+        "name": "Home Player",
+        "qualifier": "home"
+      },
+      {
+        "id": "sr:competitor:away-1",
+        "name": "Away Player",
+        "qualifier": "away"
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "id": 1,
+      "type": "match_started",
+      "time": "2026-01-02T20:00:00+00:00"
+    },
+    {
+      "id": 2,
+      "type": "period_start",
+      "time": "2026-01-02T20:00:00+00:00"
+    },
+    {
+      "id": 10,
+      "type": "dart",
+      "time": "2026-01-02T20:00:01+00:00",
+      "competitor": "home",
+      "dart_score": 20,
+      "dart_score_multiplier": 3,
+      "dart_score_total": 60,
+      "is_bust": false
+    },
+    {
+      "id": 11,
+      "type": "dart",
+      "time": "2026-01-02T20:00:03+00:00",
+      "competitor": "home",
+      "dart_score": 20,
+      "dart_score_multiplier": 3,
+      "dart_score_total": 60,
+      "is_bust": false
+    },
+    {
+      "id": 12,
+      "type": "dart",
+      "time": "2026-01-02T20:00:05+00:00",
+      "competitor": "home",
+      "dart_score": 20,
+      "dart_score_multiplier": 1,
+      "dart_score_total": 20,
+      "is_bust": false
+    },
+    {
+      "id": 13,
+      "type": "score_change",
+      "time": "2026-01-02T20:00:05+00:00",
+      "home_score": 361,
+      "away_score": 501
+    },
+    {
+      "id": 20,
+      "type": "dart",
+      "time": "2026-01-02T20:00:10+00:00",
+      "competitor": "away",
+      "dart_score": 25,
+      "dart_score_multiplier": 2,
+      "dart_score_total": 50,
+      "is_bust": false
+    },
+    {
+      "id": 21,
+      "type": "dart",
+      "time": "2026-01-02T20:00:12+00:00",
+      "competitor": "away",
+      "dart_score": 0,
+      "dart_score_multiplier": 0,
+      "dart_score_total": 0,
+      "is_bust": false
+    },
+    {
+      "id": 22,
+      "type": "dart",
+      "time": "2026-01-02T20:00:14+00:00",
+      "competitor": "away",
+      "dart_score": 20,
+      "dart_score_multiplier": 3,
+      "dart_score_total": 60,
+      "is_bust": true
+    },
+    {
+      "id": 23,
+      "type": "score_change",
+      "time": "2026-01-02T20:00:14+00:00",
+      "home_score": 361,
+      "away_score": 501
+    }
+  ]
+}

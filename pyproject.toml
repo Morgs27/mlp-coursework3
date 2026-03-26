@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "darts-gaze"
+version = "0.1.0"
+description = "Core pipeline for darts gaze collection, enrichment, and baselines."
+readme = "new-spec.md"
+requires-python = ">=3.11"
+dependencies = [
+  "Flask>=3.0",
+  "joblib>=1.5",
+  "matplotlib>=3.10",
+  "mediapipe>=0.10.18",
+  "numpy>=2.2",
+  "opencv-python-headless>=4.13",
+  "pandas>=2.3",
+  "requests>=2.32",
+  "scikit-learn>=1.8",
+  "yt-dlp>=2025.0",
+]
+
+[project.scripts]
+darts-gaze-annotate = "darts_gaze.cli:annotate_main"
+darts-gaze-build-dataset = "darts_gaze.cli:build_dataset_main"
+darts-gaze-train-baselines = "darts_gaze.cli:train_baselines_main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

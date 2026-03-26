@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Darts Gaze Annotator</title>
+    <meta name="description" content="Annotate darts broadcast footage with Sportradar match data for gaze tracking research.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <!-- ─── Top bar ─── -->
+    <header id="top-bar">
+      <div class="top-bar-left">
+        <svg class="logo-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/></svg>
+        <h1>Darts Gaze Annotator</h1>
+      </div>
+      <div class="top-bar-right">
+        <span id="global-status" class="status-pill"></span>
+      </div>
+    </header>
+
+    <!-- ─── Main app shell: 3-column layout ─── -->
+    <main id="app-layout">
+      <!-- ═══ LEFT COLUMN: Video source + Match selection ═══ -->
+      <aside id="sidebar">
+        <!-- Tab navigation for sidebar -->
+        <nav id="sidebar-tabs">
+          <button class="tab-btn active" data-tab="source-tab">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            Video
+          </button>
+          <button class="tab-btn" data-tab="match-tab">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            Match
+          </button>
+          <button class="tab-btn" data-tab="sync-tab">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+            Sync
+          </button>
+        </nav>
+
+        <!-- ── Source tab ── -->
+        <div id="source-tab" class="tab-panel active">
+          <div class="card">
+            <div class="card-header">
+              <h2>Video Source</h2>
+            </div>
+            <div class="card-body">
+              <!-- Upload from file -->
+              <form id="upload-form" class="form-group">
+                <label class="drop-zone" id="drop-zone">
+                  <input type="file" name="video" id="video-file" accept="video/mp4,video/*" hidden>
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                  <span class="drop-label">Drop video file or <em>click to browse</em></span>
+                  <span class="drop-hint" id="drop-file-name"></span>
+                </label>
+                <button type="submit" class="btn btn-primary btn-block" id="upload-btn" disabled>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                  Upload Video
+                </button>
+              </form>
+
+              <div class="divider"><span>or</span></div>
+
+              <!-- YouTube download -->
+              <div class="form-group">
+                <label class="field-label">YouTube URL</label>
+                <div class="input-group">
+                  <input type="url" id="youtube-url" placeholder="https://youtube.com/watch?v=...">
+                  <button type="button" class="btn btn-accent" id="youtube-download-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download
+                  </button>
+                </div>
+                <div id="youtube-progress" class="progress-container" hidden>
+                  <div class="progress-bar"><div class="progress-fill" id="youtube-progress-fill"></div></div>
+                  <span class="progress-text" id="youtube-progress-text">Starting download…</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>Loaded Videos</h2>
+              <span class="badge" id="video-count">0</span>
+            </div>
+            <div class="card-body">
+              <select id="video-select" class="select-input"></select>
+              <div id="video-meta" class="meta-grid"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Match tab ── -->
+        <div id="match-tab" class="tab-panel">
+          <div class="card">
+            <div class="card-header">
+              <h2>Known Matches</h2>
+            </div>
+            <div class="card-body">
+              <select id="known-match-select" class="select-input">
+                <option value="">Select a known match…</option>
+                {% for match in known_matches %}
+                <option value="{{ match.sport_event_id }}" data-youtube="{{ match.youtube_url }}">{{ match.match_date }} · {{ match.title }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>Sportradar Lookup</h2>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label class="field-label">Sport Event ID</label>
+                <input type="text" id="sport-event-id" placeholder="sr:sport_event:66098028">
+              </div>
+              <div class="form-row">
+                <div class="form-group" style="flex:1">
+                  <label class="field-label">Date</label>
+                  <input type="date" id="match-date">
+                </div>
+                <div class="form-group" style="flex:1.5">
+                  <label class="field-label">Search</label>
+                  <input type="text" id="match-query" placeholder="Player name…">
+                </div>
+              </div>
+              <button type="button" class="btn btn-secondary btn-block" id="match-search-button">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                Search Matches
+              </button>
+              <div id="match-search-results" class="results-list"></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h2>Dart Timeline</h2>
+              <span class="badge" id="dart-count">0</span>
+            </div>
+            <div class="card-body">
+              <div class="btn-row">
+                <button type="button" class="btn btn-primary" id="load-darts-button">Load Timeline</button>
+                <button type="button" class="btn btn-secondary" id="preview-match-button">Preview Candidates</button>
+              </div>
+              <div id="timeline-status" class="status-text"></div>
+              <div id="candidate-list" class="results-list"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Sync tab ── -->
+        <div id="sync-tab" class="tab-panel">
+          <div class="card">
+            <div class="card-header">
+              <h2>Sync Anchors</h2>
+              <span class="badge" id="anchor-count">0</span>
+            </div>
+            <div class="card-body">
+              <p class="helper-text">Map a video timestamp to a Sportradar timeline event to synchronise the two timelines.</p>
+              <div class="form-row">
+                <div class="form-group" style="flex:1">
+                  <label class="field-label">Video Time (s)</label>
+                  <input type="number" id="anchor-video-time" step="0.001" placeholder="0.000">
+                </div>
+                <div class="form-group" style="flex:1">
+                  <label class="field-label">Event ID</label>
+                  <input type="number" id="anchor-event-id" step="1" placeholder="2231816184">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="field-label">Notes</label>
+                <textarea id="anchor-notes" rows="2" placeholder="Optional notes…"></textarea>
+              </div>
+              <button type="button" class="btn btn-primary btn-block" id="save-anchor-button">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+                Save Anchor
+              </button>
+              <div id="anchors-list" class="results-list"></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ═══ CENTER: Video Player ═══ -->
+      <section id="viewer">
+        <div class="video-shell" id="video-shell">
+          <video id="video-player" controls playsinline crossorigin="anonymous"></video>
+          <canvas id="overlay-canvas"></canvas>
+        </div>
+
+        <!-- Transport controls -->
+        <div id="transport">
+          <!-- TOP ROW: Time, Jump, Speed, and Actions -->
+          <div class="transport-row">
+            <!-- Time display -->
+            <div class="time-display">
+              <span id="current-time">0:00.000</span>
+              <span class="time-sep">/</span>
+              <span id="total-time">0:00.000</span>
+            </div>
+
+            <!-- Jump to time -->
+            <div class="jump-group">
+              <input type="text" id="jump-time-input" class="jump-input" placeholder="0:00" title="Jump to time (m:ss or seconds)">
+              <button type="button" class="btn btn-sm btn-secondary" id="jump-time-btn" title="Go">Go</button>
+            </div>
+
+            <div class="transport-spacer"></div>
+
+            <!-- Speed selector -->
+            <div class="speed-group">
+              <label class="speed-label">Speed</label>
+              <select id="speed-select" class="speed-select">
+                <option value="0.25">0.25×</option>
+                <option value="0.5">0.5×</option>
+                <option value="0.75">0.75×</option>
+                <option value="1" selected>1×</option>
+                <option value="1.25">1.25×</option>
+                <option value="1.5">1.5×</option>
+                <option value="2">2×</option>
+              </select>
+            </div>
+
+            <div class="transport-sep"></div>
+
+            <!-- ROI / Capture -->
+            <button type="button" class="btn btn-ghost" id="clear-roi-button" title="Clear face ROI (Esc)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+              ROI
+            </button>
+            <button type="button" class="btn btn-capture" id="save-capture-button" title="Capture frame (C)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              Capture
+            </button>
+          </div>
+
+          <!-- BOTTOM ROW: Playback Controls -->
+          <div class="transport-row playback-row">
+            <div class="transport-spacer"></div>
+            
+            <button type="button" class="btn btn-icon" id="skip-back-10" title="Skip back 10s">
+              <span class="btn-label">-10s</span>
+            </button>
+            <button type="button" class="btn btn-icon" id="skip-back-5" title="Skip back 5s">
+              <span class="btn-label">-5s</span>
+            </button>
+            <button type="button" class="btn btn-icon" id="step-back-button" title="Step back 1 frame (←)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+
+            <!-- Play / Pause -->
+            <button type="button" class="btn btn-play" id="play-pause-button" title="Play / Pause (Space)">
+              <svg id="play-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <svg id="pause-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+            </button>
+
+            <button type="button" class="btn btn-icon" id="step-forward-button" title="Step forward 1 frame (→)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <button type="button" class="btn btn-icon" id="skip-fwd-5" title="Skip forward 5s">
+              <span class="btn-label">+5s</span>
+            </button>
+            <button type="button" class="btn btn-icon" id="skip-fwd-10" title="Skip forward 10s">
+              <span class="btn-label">+10s</span>
+            </button>
+
+            <div class="transport-spacer"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ RIGHT COLUMN: Captures & status ═══ -->
+      <aside id="right-panel">
+        <div class="card">
+          <div class="card-header">
+            <h2>New Capture</h2>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label class="field-label">Notes</label>
+              <textarea id="capture-notes" rows="2" placeholder="Optional capture notes…"></textarea>
+            </div>
+            <div id="capture-status" class="status-text"></div>
+          </div>
+        </div>
+
+        <div class="card flex-grow">
+          <div class="card-header">
+            <h2>Saved Captures</h2>
+            <div class="header-right">
+              <span class="badge" id="capture-count">0</span>
+            </div>
+          </div>
+          <div class="card-body scroll-area" id="captures-list"></div>
+        </div>
+      </aside>
+    </main>
+
+    <script>
+      window.__ANNOTATOR_BOOTSTRAP__ = {
+        knownMatches: {{ known_matches|tojson }}
+      };
+    </script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

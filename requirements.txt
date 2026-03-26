@@ -1,7 +1,11 @@
-yt-dlp
-opencv-python-headless
-numpy
-pandas
-librosa
-scipy
+Flask
 easyocr
+joblib
+matplotlib
+mediapipe
+numpy
+opencv-python-headless
+pandas
+requests
+scikit-learn
+yt-dlp
