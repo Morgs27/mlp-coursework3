@@ -1,0 +1,5 @@
+Caption:
+Figure 11. ROC and precision-recall curves for the selected reranker models.
+
+Explanation:
+The selected comparison set contains logistic, random_forest, torch_deep. Their overall ROC-AUC values are logistic=0.804, random_forest=0.826, torch_deep=0.809. Average precision remains high for all three models, ranging from 0.932 to 0.939, showing that the reranker is useful as a ranking stage even though hard-threshold accuracy is damped by class imbalance.

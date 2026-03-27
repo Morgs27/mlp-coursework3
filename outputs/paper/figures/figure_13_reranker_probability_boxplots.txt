@@ -1,0 +1,5 @@
+Caption:
+Figure 13. Probability separation between true wedge 19 and true wedge 20 examples for the selected rerankers.
+
+Explanation:
+The boxplots compare predicted P(20) for true 19 and true 20 samples. logistic: median P(20) is 0.091 for true 19 and 0.870 for true 20 ; random_forest: median P(20) is 0.538 for true 19 and 0.885 for true 20 ; torch_deep: median P(20) is 0.019 for true 19 and 0.988 for true 20. Wider separation between the medians and interquartile ranges indicates a more useful reranking signal.

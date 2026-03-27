@@ -4,16 +4,19 @@ from __future__ import annotations
 
 import base64
 import binascii
-import json
 import threading
 import uuid
+from io import BytesIO
 from pathlib import Path
 from typing import Any
 
+import cv2
+import numpy as np
 from flask import Flask, jsonify, render_template, request, send_file
 from werkzeug.utils import secure_filename
 
 from .config import CAPTURES_DIR, DEFAULT_DB_PATH, ROOT_DIR, VIDEOS_DIR, ensure_data_directories
+from .gaze import annotate_frame, estimate_gaze, overlay_payload
 from .matches import KNOWN_MATCHES
 from .sportradar import SportradarClient
 from .storage import AnnotationStore
@@ -41,6 +44,13 @@ def _capture_to_dict(capture: CaptureRecord) -> dict[str, Any]:
         "resolved_timeline_time_utc": capture.resolved_timeline_time_utc,
         "notes": capture.notes,
         "created_at": capture.created_at.isoformat() if capture.created_at else None,
+        "media_urls": {
+            "raw": f"/media/captures/{capture.id}",
+            "annotated": f"/media/captures/{capture.id}/annotated",
+            "annotated_roi": f"/media/captures/{capture.id}/annotated?crop=roi",
+        }
+        if capture.id is not None
+        else {},
     }
 
 
@@ -83,6 +93,32 @@ def _decode_image_data(image_data: str) -> bytes:
         return base64.b64decode(encoded)
     except binascii.Error as exc:
         raise ValueError("Invalid image payload") from exc
+
+
+def _face_bbox_from_payload(payload: dict[str, Any] | None) -> FaceBoundingBox | None:
+    if not payload:
+        return None
+    return FaceBoundingBox(
+        x=int(payload["x"]),
+        y=int(payload["y"]),
+        width=int(payload["width"]),
+        height=int(payload["height"]),
+    )
+
+
+def _png_response(image: np.ndarray):
+    ok, encoded = cv2.imencode(".png", image)
+    if not ok:
+        raise RuntimeError("Failed to encode PNG image")
+    return send_file(BytesIO(encoded.tobytes()), mimetype="image/png")
+
+
+def _load_image_from_bytes(image_bytes: bytes) -> np.ndarray:
+    array = np.frombuffer(image_bytes, dtype=np.uint8)
+    image = cv2.imdecode(array, cv2.IMREAD_COLOR)
+    if image is None:
+        raise ValueError("Unable to decode image payload")
+    return image
 
 
 def create_app(
@@ -137,6 +173,19 @@ def create_app(
         if capture is None:
             return _json_error("Unknown capture", 404)
         return send_file(capture.frame_path, conditional=True)
+
+    @app.get("/media/captures/<int:capture_id>/annotated")
+    def serve_annotated_capture(capture_id: int):
+        capture = store.get_capture(capture_id)
+        if capture is None:
+            return _json_error("Unknown capture", 404)
+        crop_mode = request.args.get("crop") == "roi"
+        frame = cv2.imread(capture.frame_path)
+        if frame is None:
+            return _json_error("Unable to load capture frame", 500)
+        result = estimate_gaze(frame, face_bbox=capture.face_bbox)
+        annotated = annotate_frame(frame, gaze_result=result, crop_to_roi=crop_mode)
+        return _png_response(annotated)
 
     @app.get("/api/known-matches")
     def known_matches():
@@ -264,6 +313,29 @@ def create_app(
             return _json_error(str(exc), 500)
         return jsonify([_throw_to_dict(throw) for throw in throws])
 
+    @app.post("/api/gaze/annotate-frame")
+    def annotate_current_frame():
+        payload = request.get_json(force=True)
+        try:
+            image_data = payload["image_data"]
+        except KeyError as exc:
+            return _json_error(f"Invalid gaze payload: {exc}")
+
+        try:
+            frame = _load_image_from_bytes(_decode_image_data(image_data))
+            face_bbox = _face_bbox_from_payload(payload.get("face_bbox"))
+            result = estimate_gaze(frame, face_bbox=face_bbox)
+        except Exception as exc:
+            return _json_error(str(exc), 400)
+
+        return jsonify(
+            {
+                "valid_face": result.valid_face,
+                "gaze": result.to_flat_dict(),
+                "overlay": overlay_payload(result),
+            }
+        )
+
     @app.get("/api/anchors")
     def list_anchors():
         video_id = request.args.get("video_id", type=int)
@@ -356,14 +428,7 @@ def create_app(
             return _json_error(f"Invalid capture payload: {exc}")
 
         face_bbox_payload = payload.get("face_bbox")
-        face_bbox = None
-        if face_bbox_payload:
-            face_bbox = FaceBoundingBox(
-                x=int(face_bbox_payload["x"]),
-                y=int(face_bbox_payload["y"]),
-                width=int(face_bbox_payload["width"]),
-                height=int(face_bbox_payload["height"]),
-            )
+        face_bbox = _face_bbox_from_payload(face_bbox_payload)
 
         capture_filename = f"capture-{uuid.uuid4().hex}.png"
         capture_path = CAPTURES_DIR / capture_filename
@@ -428,13 +493,7 @@ def create_app(
     def patch_capture(capture_id: int):
         payload = request.get_json(force=True)
         if "face_bbox" in payload and payload["face_bbox"] is not None:
-            bbox_payload = payload.pop("face_bbox")
-            payload["face_bbox"] = FaceBoundingBox(
-                x=int(bbox_payload["x"]),
-                y=int(bbox_payload["y"]),
-                width=int(bbox_payload["width"]),
-                height=int(bbox_payload["height"]),
-            )
+            payload["face_bbox"] = _face_bbox_from_payload(payload.pop("face_bbox"))
         try:
             capture = store.update_capture(capture_id, **payload)
         except Exception as exc:

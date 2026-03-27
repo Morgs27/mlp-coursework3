@@ -1,0 +1,5 @@
+Caption:
+Figure 19. van Veen, Gian side-by-side gaze tendency panels by match and in aggregate.
+
+Explanation:
+This panel contains 558 valid-face rows for van Veen, Gian. The highlighted wedges 16, 17, 18, 19, 20, BULL account for 508 rows (91.0% of this player's modeling data). The match-specific panels are 66098032 (n=288), and 66098028 (n=270), followed by a combined panel that overlays all matches using distinct markers. Large translucent disks mark per-wedge average gaze position, and the strongest highlighted counts are 20 (n=359), 19 (n=82), 18 (n=20), 16 (n=17).

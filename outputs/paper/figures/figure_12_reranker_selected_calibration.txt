@@ -1,0 +1,5 @@
+Caption:
+Figure 12. Calibration curves for the selected reranker models.
+
+Explanation:
+Among the selected rerankers, calibration is strongest for `random_forest` with ECE 0.058, followed by `torch_deep` at 0.149, while `logistic` is the least calibrated at 0.219. The histogram panel shows that most models still concentrate probability mass toward the high-P(20) region because the reranker subset itself is 83.8% wedge 20.

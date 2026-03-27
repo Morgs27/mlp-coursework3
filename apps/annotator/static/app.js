@@ -11,6 +11,10 @@ const state = {
   currentPreviewCaptureId: null,
   knownMatches: window.__ANNOTATOR_BOOTSTRAP__.knownMatches || [],
   allDarts: [],
+  liveOverlay: null,
+  liveGazeEnabled: false,
+  liveGazeBusy: false,
+  liveGazeTimer: null,
 };
 
 /* ─── Element references ─── */
@@ -18,64 +22,72 @@ const $ = (id) => document.getElementById(id);
 
 const el = {
   // top bar
-  globalStatus:     $("global-status"),
+  globalStatus: $("global-status"),
   // source tab
-  uploadForm:       $("upload-form"),
-  videoFile:        $("video-file"),
-  dropZone:         $("drop-zone"),
-  dropFileName:     $("drop-file-name"),
-  uploadBtn:        $("upload-btn"),
-  youtubeUrl:       $("youtube-url"),
+  uploadForm: $("upload-form"),
+  videoFile: $("video-file"),
+  dropZone: $("drop-zone"),
+  dropFileName: $("drop-file-name"),
+  uploadBtn: $("upload-btn"),
+  youtubeUrl: $("youtube-url"),
   youtubeDownloadBtn: $("youtube-download-btn"),
-  youtubeProgress:  $("youtube-progress"),
+  youtubeProgress: $("youtube-progress"),
   youtubeProgressFill: $("youtube-progress-fill"),
   youtubeProgressText: $("youtube-progress-text"),
-  videoSelect:      $("video-select"),
-  videoMeta:        $("video-meta"),
-  videoCount:       $("video-count"),
+  videoSelect: $("video-select"),
+  videoMeta: $("video-meta"),
+  videoCount: $("video-count"),
   // match tab
   knownMatchSelect: $("known-match-select"),
-  sportEventId:     $("sport-event-id"),
-  matchDate:        $("match-date"),
-  matchQuery:       $("match-query"),
+  sportEventId: $("sport-event-id"),
+  matchDate: $("match-date"),
+  matchQuery: $("match-query"),
   matchSearchButton: $("match-search-button"),
   matchSearchResults: $("match-search-results"),
-  loadDartsButton:  $("load-darts-button"),
+  loadDartsButton: $("load-darts-button"),
   previewMatchButton: $("preview-match-button"),
-  timelineStatus:   $("timeline-status"),
-  candidateList:    $("candidate-list"),
-  dartCount:        $("dart-count"),
+  timelineStatus: $("timeline-status"),
+  candidateList: $("candidate-list"),
+  dartCount: $("dart-count"),
   // sync tab
-  anchorVideoTime:  $("anchor-video-time"),
-  anchorEventId:    $("anchor-event-id"),
-  anchorNotes:      $("anchor-notes"),
+  anchorVideoTime: $("anchor-video-time"),
+  anchorEventId: $("anchor-event-id"),
+  anchorNotes: $("anchor-notes"),
   saveAnchorButton: $("save-anchor-button"),
-  anchorsList:      $("anchors-list"),
-  anchorCount:      $("anchor-count"),
+  anchorsList: $("anchors-list"),
+  anchorCount: $("anchor-count"),
   // viewer
-  videoPlayer:      $("video-player"),
-  overlayCanvas:    $("overlay-canvas"),
-  currentTime:      $("current-time"),
-  totalTime:        $("total-time"),
-  stepBackButton:   $("step-back-button"),
+  videoPlayer: $("video-player"),
+  overlayCanvas: $("overlay-canvas"),
+  currentTime: $("current-time"),
+  totalTime: $("total-time"),
+  stepBackButton: $("step-back-button"),
   stepForwardButton: $("step-forward-button"),
-  skipBack5:        $("skip-back-5"),
-  skipBack10:       $("skip-back-10"),
-  skipFwd5:         $("skip-fwd-5"),
-  skipFwd10:        $("skip-fwd-10"),
-  playPauseButton:  $("play-pause-button"),
-  playIcon:         $("play-icon"),
-  pauseIcon:        $("pause-icon"),
-  speedSelect:      $("speed-select"),
-  jumpTimeInput:    $("jump-time-input"),
-  jumpTimeBtn:      $("jump-time-btn"),
-  clearROIButton:   $("clear-roi-button"),
+  skipBack5: $("skip-back-5"),
+  skipBack10: $("skip-back-10"),
+  skipFwd5: $("skip-fwd-5"),
+  skipFwd10: $("skip-fwd-10"),
+  playPauseButton: $("play-pause-button"),
+  playIcon: $("play-icon"),
+  pauseIcon: $("pause-icon"),
+  speedSelect: $("speed-select"),
+  jumpTimeInput: $("jump-time-input"),
+  jumpTimeBtn: $("jump-time-btn"),
+  clearROIButton: $("clear-roi-button"),
+  annotateNowButton: $("annotate-now-button"),
+  liveGazeButton: $("live-gaze-button"),
+  gazeRefreshSelect: $("gaze-refresh-select"),
   saveCaptureButton: $("save-capture-button"),
   // right panel
-  captureNotes:     $("capture-notes"),
-  captureStatus:    $("capture-status"),
-  capturesList:     $("captures-list"),
-  captureCount:     $("capture-count"),
+  captureNotes: $("capture-notes"),
+  captureStatus: $("capture-status"),
+  liveGazeStatus: $("live-gaze-status"),
+  capturesList: $("captures-list"),
+  captureCount: $("capture-count"),
+  capturePreviewModal: $("capture-preview-modal"),
+  closeCapturePreview: $("close-capture-preview"),
+  capturePreviewTitle: $("capture-preview-title"),
+  capturePreviewImage: $("capture-preview-image"),
 };
 
 const overlayCtx = el.overlayCanvas.getContext("2d");
@@ -150,8 +162,74 @@ function syncCanvas() {
   drawROI();
 }
 
+function projectVideoPoint(point) {
+  if (!state.currentVideo) return { x: point.x, y: point.y };
+  return {
+    x: point.x * (el.overlayCanvas.width / state.currentVideo.frame_width),
+    y: point.y * (el.overlayCanvas.height / state.currentVideo.frame_height),
+  };
+}
+
+function drawArrow(start, end, color, lineWidth = 2) {
+  overlayCtx.save();
+  overlayCtx.strokeStyle = color;
+  overlayCtx.fillStyle = color;
+  overlayCtx.lineWidth = lineWidth;
+  overlayCtx.lineCap = "round";
+  overlayCtx.beginPath();
+  overlayCtx.moveTo(start.x, start.y);
+  overlayCtx.lineTo(end.x, end.y);
+  overlayCtx.stroke();
+  const angle = Math.atan2(end.y - start.y, end.x - start.x);
+  const headLength = 8;
+  overlayCtx.beginPath();
+  overlayCtx.moveTo(end.x, end.y);
+  overlayCtx.lineTo(end.x - headLength * Math.cos(angle - Math.PI / 6), end.y - headLength * Math.sin(angle - Math.PI / 6));
+  overlayCtx.lineTo(end.x - headLength * Math.cos(angle + Math.PI / 6), end.y - headLength * Math.sin(angle + Math.PI / 6));
+  overlayCtx.closePath();
+  overlayCtx.fill();
+  overlayCtx.restore();
+}
+
+function drawLiveOverlay() {
+  if (!state.liveOverlay || !state.currentVideo) return;
+  const overlay = state.liveOverlay;
+
+  if (overlay.face_bbox) {
+    const topLeft = projectVideoPoint({ x: overlay.face_bbox.x, y: overlay.face_bbox.y });
+    const bottomRight = projectVideoPoint({
+      x: overlay.face_bbox.x + overlay.face_bbox.width,
+      y: overlay.face_bbox.y + overlay.face_bbox.height,
+    });
+    overlayCtx.save();
+    overlayCtx.strokeStyle = "#2a9d8f";
+    overlayCtx.lineWidth = 2;
+    overlayCtx.setLineDash([8, 5]);
+    overlayCtx.strokeRect(topLeft.x, topLeft.y, bottomRight.x - topLeft.x, bottomRight.y - topLeft.y);
+    overlayCtx.setLineDash([]);
+    overlayCtx.restore();
+  }
+
+  const colorMap = {
+    left: "#58a6ff",
+    right: "#f47067",
+    average: "#d29922",
+    x: "#ff6b6b",
+    y: "#3fb950",
+    z: "#79c0ff",
+  };
+
+  (overlay.gaze_arrows || []).forEach((arrow) => {
+    drawArrow(projectVideoPoint(arrow.start), projectVideoPoint(arrow.end), colorMap[arrow.label] || "#ffffff", arrow.label === "average" ? 3 : 2);
+  });
+  (overlay.head_axes || []).forEach((axis) => {
+    drawArrow(projectVideoPoint(axis.start), projectVideoPoint(axis.end), colorMap[axis.label] || "#ffffff", 2);
+  });
+}
+
 function drawROI() {
   overlayCtx.clearRect(0, 0, el.overlayCanvas.width, el.overlayCanvas.height);
+  drawLiveOverlay();
   if (!state.currentROI) return;
   overlayCtx.strokeStyle = "#f47067";
   overlayCtx.lineWidth = 2;
@@ -174,6 +252,19 @@ function canvasROIToVideoROI() {
     width: Math.round(state.currentROI.width * sx),
     height: Math.round(state.currentROI.height * sy),
   };
+}
+
+function openCapturePreview(title, src) {
+  el.capturePreviewTitle.textContent = title;
+  el.capturePreviewImage.src = `${src}${src.includes("?") ? "&" : "?"}t=${Date.now()}`;
+  el.capturePreviewModal.classList.remove("hidden");
+  el.capturePreviewModal.setAttribute("aria-hidden", "false");
+}
+
+function closeCapturePreview() {
+  el.capturePreviewModal.classList.add("hidden");
+  el.capturePreviewModal.setAttribute("aria-hidden", "true");
+  el.capturePreviewImage.removeAttribute("src");
 }
 
 /* ─── Time display update ─── */
@@ -205,6 +296,7 @@ async function loadVideos() {
 }
 
 function selectVideo(video) {
+  stopLiveGaze({ clearOverlay: true, clearStatus: true });
   state.currentVideo = video;
   state.currentFPS = video.fps || 30;
   el.videoSelect.value = video.id;
@@ -219,6 +311,7 @@ function selectVideo(video) {
   `;
 
   state.currentROI = null;
+  state.liveOverlay = null;
   drawROI();
   loadAnchors();
   loadCaptures();
@@ -339,23 +432,43 @@ function renderCaptures(captures) {
         </div>
       </div>
       <div class="capture-footer">
-        <span class="capture-status-badge ${statusCls}">${c.review_status}</span>
-        <div class="capture-actions">
-          <button type="button" class="btn-goto-capture" title="Jump video to this time">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-            Go to
-          </button>
-          <button type="button" class="btn-delete-capture" title="Delete this capture">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
-            Delete
-          </button>
+        <div class="capture-footer-top">
+          <span class="capture-status-badge ${statusCls}">${c.review_status}</span>
+          <div class="capture-actions">
+            <button type="button" class="btn-goto-capture" title="Jump video to this time">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Go to
+            </button>
+            <button type="button" class="btn-delete-capture" title="Delete this capture">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+              Delete
+            </button>
+          </div>
+        </div>
+        <div class="capture-footer-bottom">
+          <button type="button" class="btn-preview-capture" title="View raw frame">Raw</button>
+          <button type="button" class="btn-preview-capture" title="View annotated frame">Annotated</button>
+          ${c.face_bbox ? '<button type="button" class="btn-preview-capture btn-preview-roi" title="View annotated ROI">ROI</button>' : ""}
         </div>
       </div>`;
 
-    // Jump to time on thumbnail click
+    // Preview raw capture on thumbnail click
     card.querySelector(".capture-thumb").addEventListener("click", () => {
-      el.videoPlayer.currentTime = c.video_time_s;
+      openCapturePreview(`Capture #${c.id} · Raw`, c.media_urls.raw);
     });
+
+    card.querySelector(".btn-preview-capture").addEventListener("click", () => {
+      openCapturePreview(`Capture #${c.id} · Raw`, c.media_urls.raw);
+    });
+    card.querySelectorAll(".btn-preview-capture")[1].addEventListener("click", () => {
+      openCapturePreview(`Capture #${c.id} · Annotated`, c.media_urls.annotated);
+    });
+    const roiButton = card.querySelector(".btn-preview-roi");
+    if (roiButton) {
+      roiButton.addEventListener("click", () => {
+        openCapturePreview(`Capture #${c.id} · ROI`, c.media_urls.annotated_roi);
+      });
+    }
 
     // Go to button
     card.querySelector(".btn-goto-capture").addEventListener("click", () => {
@@ -372,7 +485,7 @@ function renderCaptures(captures) {
       } catch (err) {
         setGlobalStatus(`Delete failed: ${err.message}`, "warn");
       }
-    });
+    })
 
     el.capturesList.appendChild(card);
   });
@@ -398,7 +511,15 @@ function renderCandidates(candidates, captureId = null) {
     el.candidateList.innerHTML = '<div class="helper-text" style="padding:8px">No candidates.</div>';
     return;
   }
+  let lastPeriod = null;
   candidates.forEach((c) => {
+    if (c.period !== undefined && c.period !== null && c.period !== lastPeriod) {
+      lastPeriod = c.period;
+      const header = document.createElement("div");
+      header.className = "period-header";
+      header.innerHTML = `Set ${c.period}`;
+      el.candidateList.appendChild(header);
+    }
     const item = document.createElement("div");
     item.className = "list-item";
     item.innerHTML = `
@@ -434,7 +555,7 @@ async function loadDartTimeline() {
   state.allDarts = darts;
   el.dartCount.textContent = darts.length;
   setStatus(el.timelineStatus, `Loaded ${darts.length} dart events`, "status-ok");
-  renderCandidates(darts.slice(0, 50));
+  renderCandidates(darts);
 }
 
 async function previewMatchResolution() {
@@ -485,6 +606,80 @@ async function saveCapture() {
   setGlobalStatus(`Captured frame #${cap.id}`, "ok");
   renderCandidates(res.candidates || [], cap.id);
   await loadCaptures();
+}
+
+async function requestCurrentFrameAnnotation() {
+  requireVideo();
+  if (state.liveGazeBusy || el.videoPlayer.readyState < 2) return null;
+  state.liveGazeBusy = true;
+  try {
+    const response = await fetchJSON("/api/gaze/annotate-frame", {
+      method: "POST",
+      body: JSON.stringify({
+        image_data: captureFrameDataURL(),
+        face_bbox: canvasROIToVideoROI(),
+      }),
+    });
+    state.liveOverlay = response.overlay || null;
+    drawROI();
+    setStatus(
+      el.liveGazeStatus,
+      response.valid_face ? "Live gaze overlay updated." : "Live gaze: no face detected in the current frame.",
+      response.valid_face ? "status-ok" : "status-review",
+    );
+    return response;
+  } catch (error) {
+    setStatus(el.liveGazeStatus, `Live gaze failed: ${error.message}`, "status-review");
+    throw error;
+  } finally {
+    state.liveGazeBusy = false;
+  }
+}
+
+function updateLiveGazeButton() {
+  if (state.liveGazeEnabled) {
+    el.liveGazeButton.classList.add("live-active");
+    el.liveGazeButton.innerHTML = `
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="12" height="12"/></svg>
+      Stop Live
+    `;
+  } else {
+    el.liveGazeButton.classList.remove("live-active");
+    el.liveGazeButton.innerHTML = `
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      Live Gaze
+    `;
+  }
+}
+
+function stopLiveGaze({ clearOverlay = false, clearStatus = false } = {}) {
+  if (state.liveGazeTimer) {
+    clearInterval(state.liveGazeTimer);
+    state.liveGazeTimer = null;
+  }
+  state.liveGazeEnabled = false;
+  if (clearOverlay) {
+    state.liveOverlay = null;
+    drawROI();
+  }
+  if (clearStatus) {
+    setStatus(el.liveGazeStatus, "", "");
+  }
+  updateLiveGazeButton();
+}
+
+async function startLiveGaze() {
+  requireVideo();
+  stopLiveGaze();
+  state.liveGazeEnabled = true;
+  updateLiveGazeButton();
+  await requestCurrentFrameAnnotation();
+  const intervalMs = Math.max(120, Math.round(1000 / Number(el.gazeRefreshSelect.value || 4)));
+  state.liveGazeTimer = setInterval(() => {
+    if (!state.liveGazeEnabled || state.liveGazeBusy) return;
+    if (el.videoPlayer.paused || el.videoPlayer.ended) return;
+    requestCurrentFrameAnnotation().catch(() => { });
+  }, intervalMs);
 }
 
 /* ═══ YOUTUBE DOWNLOAD ═══ */
@@ -680,8 +875,23 @@ el.skipFwd10.addEventListener("click", () => skipTime(10));
 
 /* ─ Play / Pause ─ */
 el.playPauseButton.addEventListener("click", togglePlayPause);
-el.videoPlayer.addEventListener("play", syncPlayPauseIcon);
-el.videoPlayer.addEventListener("pause", syncPlayPauseIcon);
+el.videoPlayer.addEventListener("play", () => {
+  syncPlayPauseIcon();
+  if (state.liveGazeEnabled) {
+    requestCurrentFrameAnnotation().catch(() => { });
+  }
+});
+el.videoPlayer.addEventListener("pause", () => {
+  syncPlayPauseIcon();
+  if (state.liveGazeEnabled) {
+    requestCurrentFrameAnnotation().catch(() => { });
+  }
+});
+el.videoPlayer.addEventListener("seeked", () => {
+  if (state.liveGazeEnabled) {
+    requestCurrentFrameAnnotation().catch(() => { });
+  }
+});
 
 /* ─ Speed ─ */
 el.speedSelect.addEventListener("change", () => {
@@ -705,6 +915,26 @@ el.jumpTimeInput.addEventListener("keydown", (e) => {
 el.clearROIButton.addEventListener("click", () => {
   state.currentROI = null;
   drawROI();
+});
+
+el.annotateNowButton.addEventListener("click", () => {
+  requestCurrentFrameAnnotation().catch((e) => setStatus(el.liveGazeStatus, e.message, "status-review"));
+});
+
+el.liveGazeButton.addEventListener("click", () => {
+  if (state.liveGazeEnabled) {
+    stopLiveGaze({ clearOverlay: true, clearStatus: true });
+    setGlobalStatus("Live gaze stopped", "ok");
+    return;
+  }
+  startLiveGaze()
+    .then(() => setGlobalStatus("Live gaze started", "ok"))
+    .catch((e) => setStatus(el.liveGazeStatus, e.message, "status-review"));
+});
+
+el.gazeRefreshSelect.addEventListener("change", () => {
+  if (!state.liveGazeEnabled) return;
+  startLiveGaze().catch((e) => setStatus(el.liveGazeStatus, e.message, "status-review"));
 });
 
 el.overlayCanvas.addEventListener("pointerdown", (e) => {
@@ -750,6 +980,12 @@ el.videoPlayer.addEventListener("loadedmetadata", () => {
 el.videoPlayer.addEventListener("timeupdate", updateTimeDisplay);
 window.addEventListener("resize", syncCanvas);
 
+/* ─ Modal ─ */
+el.closeCapturePreview.addEventListener("click", closeCapturePreview);
+document.querySelectorAll("[data-close-modal]").forEach((node) => {
+  node.addEventListener("click", closeCapturePreview);
+});
+
 /* ─── Keyboard shortcuts ─── */
 document.addEventListener("keydown", (e) => {
   // Don't intercept when typing in inputs
@@ -772,6 +1008,10 @@ document.addEventListener("keydown", (e) => {
       saveCapture().catch((e2) => setStatus(el.captureStatus, e2.message, "status-review"));
       break;
     case "Escape":
+      if (!el.capturePreviewModal.classList.contains("hidden")) {
+        closeCapturePreview();
+        break;
+      }
       state.currentROI = null;
       drawROI();
       break;
@@ -779,4 +1019,5 @@ document.addEventListener("keydown", (e) => {
 });
 
 /* ═══ INIT ═══ */
+updateLiveGazeButton();
 loadVideos().catch((e) => setGlobalStatus(e.message, "warn"));

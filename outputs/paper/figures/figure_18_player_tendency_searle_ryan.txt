@@ -1,0 +1,5 @@
+Caption:
+Figure 18. Searle, Ryan side-by-side gaze tendency panels by match and in aggregate.
+
+Explanation:
+This panel contains 266 valid-face rows for Searle, Ryan. The highlighted wedges 1, 5, 17, 18, 19, 20 account for 248 rows (93.2% of this player's modeling data). The match-specific panels are 66098024 (n=266), followed by a combined panel that overlays all matches using distinct markers. Large translucent disks mark per-wedge average gaze position, and the strongest highlighted counts are 20 (n=178), 19 (n=25), 18 (n=14), 1 (n=13).

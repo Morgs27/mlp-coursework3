@@ -82,6 +82,7 @@ def resolve_throw_for_capture(
     throw_labels: list[ThrowLabel],
     selected_throw_event_id: int | None = None,
     window_s: float = 5.0,
+    pre_window_s: float = 0.0,
 ) -> MatchResolution:
     """Resolve the nearest next dart event for a video capture."""
 
@@ -112,7 +113,7 @@ def resolve_throw_for_capture(
     for label in throw_labels:
         throw_dt = parse_utc_timestamp(label.throw_time_utc)
         delta_s = (throw_dt - mapped_dt).total_seconds()
-        if 0 <= delta_s <= window_s:
+        if -pre_window_s <= delta_s <= window_s and delta_s >= 0:
             candidate_labels.append((delta_s, label))
 
     if not candidate_labels:
@@ -124,7 +125,7 @@ def resolve_throw_for_capture(
             resolution_status="needs_review",
         )
 
-    candidate_labels.sort(key=lambda item: (item[0], item[1].throw_event_id))
+    candidate_labels.sort(key=lambda item: (abs(item[0]), item[1].throw_event_id))
     candidate_ids = [label.throw_event_id for _, label in candidate_labels]
     nearest = candidate_labels[0][1]
     ambiguous = len(candidate_labels) > 1

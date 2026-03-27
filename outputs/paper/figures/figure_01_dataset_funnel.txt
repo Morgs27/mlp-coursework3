@@ -1,0 +1,5 @@
+Caption:
+Figure 1. Dataset funnel from all matched captures to the valid-face modeling set and the final 19-vs-20 reranker subset.
+
+Explanation:
+The current dataset contains 1725 matched captures. Of these, 1725 rows (100.0%) entered modeling after valid-face filtering, leaving 0 rows (0.0%) excluded because gaze was not reliable enough. The 19-vs-20 reranker subset contains 1334 rows, which is 77.3% of all matched captures and 77.3% of the valid-face modeling set.

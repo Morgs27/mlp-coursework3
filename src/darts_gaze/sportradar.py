@@ -187,6 +187,10 @@ class SportradarClient:
                 remaining = {"home": 501, "away": 501}
                 visit_remaining = remaining.copy()
                 continue
+                
+            if event_type == "leg_score_change":
+                current_period += 1
+                continue
 
             if event_type == "score_change":
                 if event.get("home_score") is not None:

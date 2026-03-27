@@ -1,0 +1,5 @@
+Caption:
+Figure 4. Match-level class balance for the 19-vs-20 reranker subset.
+
+Explanation:
+The reranker subset contains 1108 examples of wedge 20 and 226 examples of wedge 19, giving a class balance of 83.1% versus 16.9%. The largest held-out fold is match 66098032 with 462 reranker rows (34.6% of the reranker set), which explains why raw accuracy alone is not an adequate metric.

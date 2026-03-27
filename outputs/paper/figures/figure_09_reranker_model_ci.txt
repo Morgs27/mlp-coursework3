@@ -1,0 +1,5 @@
+Caption:
+Figure 9. Reranker comparison with 95% bootstrap confidence intervals for ranking, threshold, and calibration metrics.
+
+Explanation:
+`random_forest` has the strongest ranking performance with ROC-AUC 0.826 (95% CI 0.791-0.858) and average precision 0.939 (95% CI 0.922-0.956). The highest balanced accuracy is delivered by `extra_trees` at 0.772, while the lowest calibration error among the learned models is achieved by `random_forest` at ECE 0.058. This split shows that ranking quality and calibration are not optimized by the same model.

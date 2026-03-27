@@ -101,7 +101,8 @@ class GazeResult:
                 output[name] = None
 
         for key, value in self.metadata.items():
-            output[f"gaze_meta_{key}"] = value
+            if isinstance(value, (str, int, float, bool)) or value is None:
+                output[f"gaze_meta_{key}"] = value
         return output
 
 

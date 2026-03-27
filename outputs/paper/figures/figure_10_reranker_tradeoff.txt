@@ -1,0 +1,5 @@
+Caption:
+Figure 10. Trade-off between reranker ranking quality, threshold performance, and calibration.
+
+Explanation:
+`logistic` yields the best ranking score with ROC-AUC 0.804 but has the worst calibration among the learned models (ECE 0.219). `random_forest` sacrifices some ROC-AUC (0.826) but substantially improves calibration (ECE 0.058) and log loss (0.325). `torch_deep` achieves the strongest threshold performance with balanced accuracy 0.757, making it a useful comparison point even though its calibration is weaker than the forest model.

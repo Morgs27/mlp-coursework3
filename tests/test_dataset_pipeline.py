@@ -74,11 +74,37 @@ def test_dataset_builder_creates_enriched_and_training_rows(
     artifacts = builder.build(write_back=True)
 
     assert artifacts.enriched_rows == 1
+    assert artifacts.unresolved_rows == 0
+    assert artifacts.valid_face_rows == 1
+    assert artifacts.modeling_rows == 1
     enriched_df = pd.read_csv(artifacts.enriched_csv)
     assert list(enriched_df["segment_label"]) == ["T20"]
     assert list(enriched_df["resulting_score"]) == [0]
     assert list(enriched_df["raw_resulting_score"]) == [60]
     assert list(enriched_df["review_status"]) == ["matched"]
+    assert list(enriched_df["entered_modeling"]) == [True]
+    assert [str(value) for value in enriched_df["wedge_number_label"]] == ["20"]
+    assert [str(value) for value in enriched_df["coarse_wedge_area_label"]] == ["20"]
 
     training_df = pd.read_csv(artifacts.training_csv)
     assert len(training_df) == 1
+
+    capture_quality_df = pd.read_csv(artifacts.capture_quality_csv)
+    assert len(capture_quality_df) == 1
+    assert capture_quality_df.loc[0, "valid_face"] in (True, 1)
+    assert capture_quality_df.loc[0, "entered_modeling"] in (True, 1)
+    assert str(capture_quality_df.loc[0, "wedge_number_label"]) == "20"
+    assert str(capture_quality_df.loc[0, "coarse_wedge_area_label"]) == "20"
+
+    dataset_summary_df = pd.read_csv(artifacts.dataset_summary_csv)
+    assert set(dataset_summary_df["summary_type"]) == {
+        "sport_event_id",
+        "player_name",
+        "segment_label",
+        "wedge_number_label",
+        "coarse_wedge_area_label",
+        "resulting_score",
+    }
+
+    qa_summary_df = pd.read_csv(artifacts.qa_summary_csv)
+    assert "total_captures" in set(qa_summary_df["metric"])

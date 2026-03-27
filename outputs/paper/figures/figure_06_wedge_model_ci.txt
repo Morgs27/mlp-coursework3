@@ -1,0 +1,5 @@
+Caption:
+Figure 6. Wedge-model comparison with 95% bootstrap confidence intervals.
+
+Explanation:
+The highest 3-wedge accuracy is achieved by random_forest at 0.743 (95% CI 0.722-0.765), but that performance is largely driven by dataset skew. Among non-degenerate learned models, `mlp_deep` gives the best macro-F1 at 0.151 (95% CI 0.115-0.182), while `extra_trees` yields the lowest circular wedge MAE at 1.478 (95% CI 1.346-1.611).

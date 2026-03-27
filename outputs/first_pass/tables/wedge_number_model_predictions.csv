@@ -1,0 +1,1726 @@
+capture_id,sport_event_id,player_name,true_wedge_number_label,majority_predicted_label,logistic_predicted_label,knn_predicted_label,extra_trees_predicted_label,random_forest_predicted_label,svc_rbf_predicted_label,mlp_deep_predicted_label,torch_deep_predicted_label
+1857,sr:sport_event:66098028,"van Veen, Gian",14,20,8,20,16,20,8,8,8
+1856,sr:sport_event:66098028,"Anderson, Gary",15,20,17,20,20,20,19,20,19
+1855,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1854,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1853,sr:sport_event:66098028,"van Veen, Gian",BULL,20,19,20,19,19,19,19,19
+1852,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,19,19,19
+1851,sr:sport_event:66098028,"Anderson, Gary",7,20,5,20,20,20,20,20,5
+1850,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1849,sr:sport_event:66098028,"Anderson, Gary",5,20,18,20,20,20,20,20,5
+1848,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1847,sr:sport_event:66098028,"Anderson, Gary",20,20,20,20,20,20,20,20,3
+1846,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1845,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,20
+1844,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,19,20,19,19,19
+1843,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1842,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1841,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1840,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,19,1
+1839,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1838,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1837,sr:sport_event:66098028,"Anderson, Gary",1,20,9,20,20,20,9,20,5
+1836,sr:sport_event:66098028,"Anderson, Gary",2,20,14,20,20,20,8,17,9
+1834,sr:sport_event:66098028,"Anderson, Gary",5,20,14,20,20,20,9,1,9
+1833,sr:sport_event:66098028,"Anderson, Gary",10,20,9,20,20,20,18,BULL,5
+1832,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,9,20,5
+1831,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+1830,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1829,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1828,sr:sport_event:66098028,"Anderson, Gary",10,20,9,20,20,20,18,20,5
+1827,sr:sport_event:66098028,"Anderson, Gary",17,20,14,20,20,20,1,19,5
+1826,sr:sport_event:66098028,"van Veen, Gian",19,20,19,20,19,19,19,19,19
+1825,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+1824,sr:sport_event:66098028,"Anderson, Gary",19,20,1,20,20,20,1,20,20
+1823,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,20
+1822,sr:sport_event:66098028,"van Veen, Gian",17,20,3,20,19,17,15,19,17
+1821,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1820,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1819,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,5,20,5
+1818,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,20,3,19,3
+1817,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,3,20,3
+1816,sr:sport_event:66098028,"van Veen, Gian",20,20,5,20,20,20,5,20,5
+1815,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1814,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1813,sr:sport_event:66098028,"van Veen, Gian",20,20,9,20,20,20,14,20,14
+1811,sr:sport_event:66098028,"Anderson, Gary",14,20,14,20,20,20,5,1,5
+1810,sr:sport_event:66098028,"van Veen, Gian",20,20,9,20,BULL,20,16,16,16
+1809,sr:sport_event:66098028,"van Veen, Gian",BULL,20,3,20,19,19,16,19,19
+1808,sr:sport_event:66098028,"van Veen, Gian",5,20,8,20,20,20,8,5,14
+1807,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1806,sr:sport_event:66098028,"van Veen, Gian",20,20,BULL,20,20,20,1,20,1
+1805,sr:sport_event:66098028,"van Veen, Gian",17,20,3,20,19,19,19,19,19
+1804,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,20,3,19,3
+1803,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1802,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1801,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,18,20,18
+1800,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,20,19,19,3
+1799,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,3,20,3
+1798,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1797,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1796,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,19,19,19
+1795,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,3,20,3
+1794,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,3,20,3
+1793,sr:sport_event:66098028,"Anderson, Gary",4,20,9,20,20,20,20,5,5
+1792,sr:sport_event:66098028,"van Veen, Gian",20,20,5,20,20,20,20,20,20
+1791,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1790,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,20
+1789,sr:sport_event:66098028,"Anderson, Gary",8,20,14,20,14,14,9,3,9
+1788,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,9,1,5
+1786,sr:sport_event:66098028,"Anderson, Gary",18,20,9,20,20,20,20,20,5
+1785,sr:sport_event:66098028,"van Veen, Gian",18,20,20,20,20,20,5,20,20
+1784,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,5
+1783,sr:sport_event:66098028,"Anderson, Gary",19,20,1,20,20,20,1,20,20
+1782,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1781,sr:sport_event:66098028,"van Veen, Gian",18,20,1,20,20,20,1,20,20
+1780,sr:sport_event:66098028,"van Veen, Gian",18,20,1,20,19,20,1,18,20
+1779,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1778,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,20
+1777,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1776,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,19,19,19
+1775,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+1774,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1773,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1772,sr:sport_event:66098028,"van Veen, Gian",16,20,8,20,16,16,16,8,8
+1771,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,18
+1770,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1769,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,20
+1768,sr:sport_event:66098028,"van Veen, Gian",14,20,8,20,16,16,8,8,14
+1767,sr:sport_event:66098028,"van Veen, Gian",15,20,3,20,17,19,17,19,17
+1766,sr:sport_event:66098028,"van Veen, Gian",20,20,9,20,20,20,BULL,20,5
+1765,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1764,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1763,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,18,20,18
+1762,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,20,19,20,19
+1761,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1760,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1759,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1758,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1757,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,20
+1756,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+1755,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1754,sr:sport_event:66098028,"Anderson, Gary",1,20,5,20,20,20,20,20,5
+1753,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1752,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,19,19,19,19
+1751,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,20,3,19,3
+1750,sr:sport_event:66098028,"Anderson, Gary",BULL,20,9,20,20,20,9,20,9
+1749,sr:sport_event:66098028,"Anderson, Gary",12,20,9,20,20,20,9,20,5
+1748,sr:sport_event:66098028,"Anderson, Gary",19,20,14,20,20,20,1,5,9
+1747,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,19,1
+1746,sr:sport_event:66098028,"van Veen, Gian",20,20,18,20,20,20,18,20,18
+1745,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1744,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1743,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1742,sr:sport_event:66098028,"van Veen, Gian",20,20,5,20,20,20,1,19,1
+1741,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,20
+1740,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,3
+1739,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1738,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1737,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,3,20,1
+1736,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1735,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1734,sr:sport_event:66098028,"van Veen, Gian",20,20,19,20,19,19,19,19,19
+1733,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1732,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1731,sr:sport_event:66098028,"Anderson, Gary",8,20,9,20,20,20,9,1,9
+1730,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1729,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,19,3,19,3
+1728,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,19,20,1
+1727,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,1,5
+1726,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,1,5
+1725,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,19,20,19
+1724,sr:sport_event:66098028,"van Veen, Gian",20,20,5,20,20,20,5,20,5
+1723,sr:sport_event:66098028,"Anderson, Gary",18,20,5,20,20,20,20,20,5
+1722,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1721,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1720,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,19,19,19
+1719,sr:sport_event:66098028,"Anderson, Gary",1,20,18,20,20,20,5,20,5
+1718,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,19,19,3
+1717,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,20,3,19,3
+1716,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1715,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1714,sr:sport_event:66098028,"van Veen, Gian",8,20,8,20,16,16,8,8,8
+1713,sr:sport_event:66098028,"Anderson, Gary",19,20,18,20,20,20,20,20,5
+1712,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1711,sr:sport_event:66098028,"van Veen, Gian",16,20,8,20,8,8,8,8,8
+1710,sr:sport_event:66098028,"van Veen, Gian",16,20,8,20,16,16,16,19,8
+1709,sr:sport_event:66098028,"van Veen, Gian",20,20,8,20,19,19,19,17,16
+1708,sr:sport_event:66098028,"Anderson, Gary",15,20,17,20,20,20,20,20,20
+1707,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1706,sr:sport_event:66098028,"Anderson, Gary",5,20,5,20,20,20,20,20,5
+1705,sr:sport_event:66098028,"van Veen, Gian",7,20,16,20,19,19,17,19,19
+1704,sr:sport_event:66098028,"van Veen, Gian",20,20,14,20,20,20,14,16,9
+1703,sr:sport_event:66098028,"van Veen, Gian",19,20,16,20,19,19,16,19,19
+1701,sr:sport_event:66098028,"Anderson, Gary",7,20,5,20,20,20,20,20,5
+1700,sr:sport_event:66098028,"van Veen, Gian",18,20,15,20,19,19,17,19,17
+1699,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1698,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,20
+1697,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1696,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+1695,sr:sport_event:66098028,"Anderson, Gary",7,20,20,20,20,20,20,20,5
+1694,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1693,sr:sport_event:66098028,"van Veen, Gian",18,20,3,20,19,19,19,19,19
+1692,sr:sport_event:66098028,"van Veen, Gian",19,20,15,20,19,19,19,19,19
+1691,sr:sport_event:66098028,"Anderson, Gary",18,20,9,20,20,20,20,20,5
+1690,sr:sport_event:66098028,"Anderson, Gary",17,20,9,20,20,20,20,1,5
+1689,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1688,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1687,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,18
+1686,sr:sport_event:66098028,"van Veen, Gian",19,20,19,20,20,19,19,19,17
+1685,sr:sport_event:66098028,"van Veen, Gian",20,20,18,20,20,20,18,20,18
+1683,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,18,20,18
+1682,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+1681,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,3,20,3
+1680,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,2,20,20
+1679,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1678,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1677,sr:sport_event:66098028,"van Veen, Gian",8,20,8,20,8,8,8,8,8
+1676,sr:sport_event:66098028,"van Veen, Gian",8,20,8,20,8,BULL,8,8,8
+1675,sr:sport_event:66098028,"Anderson, Gary",16,20,14,20,14,14,8,3,9
+1674,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1672,sr:sport_event:66098028,"van Veen, Gian",17,20,16,20,19,19,16,19,19
+1671,sr:sport_event:66098028,"van Veen, Gian",20,20,16,20,20,20,16,16,16
+1670,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1669,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1668,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1667,sr:sport_event:66098028,"van Veen, Gian",BULL,20,18,20,20,20,4,4,13
+1666,sr:sport_event:66098028,"van Veen, Gian",20,20,4,20,20,20,1,20,20
+1665,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,20,3,20,3
+1664,sr:sport_event:66098028,"Anderson, Gary",20,20,20,20,20,20,20,20,5
+1663,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1662,sr:sport_event:66098028,"van Veen, Gian",19,20,19,20,19,19,19,19,19
+1661,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1660,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1659,sr:sport_event:66098028,"Anderson, Gary",5,20,18,20,20,20,20,20,5
+1658,sr:sport_event:66098028,"van Veen, Gian",5,20,3,20,20,20,3,19,3
+1657,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,19,20,19
+1656,sr:sport_event:66098028,"van Veen, Gian",20,20,8,20,20,19,16,19,8
+1655,sr:sport_event:66098028,"van Veen, Gian",20,20,16,20,19,20,16,16,16
+1654,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1651,sr:sport_event:66098028,"Anderson, Gary",17,20,9,20,20,20,20,20,5
+1650,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1649,sr:sport_event:66098028,"van Veen, Gian",17,20,15,20,19,19,15,19,17
+1647,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,3,20,3
+1646,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+1645,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,5,20,5
+1644,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1643,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1642,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1641,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,19,19,19,19
+1640,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1639,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1638,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1637,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1636,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+1635,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1634,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1633,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1632,sr:sport_event:66098028,"van Veen, Gian",18,20,18,20,20,19,7,20,18
+1631,sr:sport_event:66098028,"van Veen, Gian",18,20,18,20,20,20,17,18,18
+1630,sr:sport_event:66098028,"Anderson, Gary",19,20,1,20,20,20,1,20,1
+1629,sr:sport_event:66098028,"Anderson, Gary",20,20,20,20,20,20,20,20,4
+1628,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,19,19,19
+1627,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1626,sr:sport_event:66098028,"van Veen, Gian",20,20,5,20,20,20,10,5,4
+1625,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1624,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1623,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1622,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,19,19,1
+1621,sr:sport_event:66098028,"Anderson, Gary",19,20,18,20,20,20,18,20,18
+1620,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1619,sr:sport_event:66098028,"van Veen, Gian",19,20,19,20,19,19,19,19,19
+1618,sr:sport_event:66098028,"Anderson, Gary",BULL,20,14,20,20,20,9,12,9
+1617,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1616,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,9,20,5
+1615,sr:sport_event:66098028,"van Veen, Gian",19,20,15,20,19,19,19,19,19
+1614,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,20,20,20
+1613,sr:sport_event:66098028,"Anderson, Gary",18,20,5,20,20,20,20,20,5
+1612,sr:sport_event:66098028,"Anderson, Gary",18,20,18,20,20,20,20,20,5
+1611,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1610,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,20,20,5
+1609,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,20
+1608,sr:sport_event:66098028,"Anderson, Gary",19,20,20,20,20,20,1,20,5
+1607,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1606,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1605,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,19,19,19
+1603,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1602,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1601,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1600,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+1599,sr:sport_event:66098028,"van Veen, Gian",20,20,4,20,4,20,4,20,4
+1598,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1597,sr:sport_event:66098028,"Anderson, Gary",7,20,19,20,20,20,1,20,1
+1596,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1595,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1594,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,20,20,5
+1593,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1592,sr:sport_event:66098028,"Anderson, Gary",20,20,20,20,20,20,19,1,20
+1591,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1590,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,18,20,18
+1589,sr:sport_event:66098028,"van Veen, Gian",19,20,20,20,19,19,19,19,19
+1588,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,2,20,1
+1587,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1586,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1584,sr:sport_event:66098028,"van Veen, Gian",16,20,8,20,8,8,8,8,8
+1582,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,9,20,5
+1581,sr:sport_event:66098028,"Anderson, Gary",19,20,14,20,20,16,9,5,9
+1580,sr:sport_event:66098028,"Anderson, Gary",BULL,20,14,20,20,20,1,1,9
+1579,sr:sport_event:66098028,"van Veen, Gian",19,20,16,20,19,19,16,19,19
+1578,sr:sport_event:66098028,"van Veen, Gian",20,20,16,20,20,19,16,16,8
+1577,sr:sport_event:66098028,"Anderson, Gary",19,20,18,20,20,20,20,20,20
+1576,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,19,19,19
+1575,sr:sport_event:66098028,"van Veen, Gian",20,20,19,20,19,19,19,19,19
+1574,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1573,sr:sport_event:66098028,"Anderson, Gary",19,20,1,20,20,20,1,20,20
+1572,sr:sport_event:66098028,"van Veen, Gian",20,20,5,20,20,20,20,20,5
+1571,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1570,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1569,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1568,sr:sport_event:66098028,"Anderson, Gary",19,20,5,20,20,20,20,20,5
+1567,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1566,sr:sport_event:66098028,"van Veen, Gian",16,20,8,20,8,8,8,8,8
+1565,sr:sport_event:66098028,"van Veen, Gian",9,20,14,20,20,20,16,9,14
+1564,sr:sport_event:66098028,"van Veen, Gian",20,20,16,20,19,19,16,19,16
+1563,sr:sport_event:66098028,"van Veen, Gian",20,20,9,20,20,9,14,20,9
+1562,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1561,sr:sport_event:66098028,"Anderson, Gary",20,20,1,20,20,20,1,20,20
+1560,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,18,20,20
+1559,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,20,20,20
+1558,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,20
+1557,sr:sport_event:66098028,"Anderson, Gary",19,20,20,20,20,20,20,20,5
+1556,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1555,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,19,20
+1554,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,20,20,20
+1553,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+1551,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1550,sr:sport_event:66098028,"Anderson, Gary",20,20,20,20,20,20,20,20,5
+1549,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,18,20,18
+1548,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+1547,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1546,sr:sport_event:66098028,"Anderson, Gary",16,20,14,20,14,14,14,5,9
+1544,sr:sport_event:66098028,"Anderson, Gary",7,20,14,20,20,20,1,5,9
+1543,sr:sport_event:66098028,"Anderson, Gary",7,20,14,20,20,20,1,1,9
+1542,sr:sport_event:66098028,"van Veen, Gian",BULL,20,3,20,17,19,17,19,17
+1541,sr:sport_event:66098028,"van Veen, Gian",BULL,20,3,20,19,19,16,19,19
+1540,sr:sport_event:66098028,"van Veen, Gian",19,20,8,20,16,16,16,19,8
+1539,sr:sport_event:66098028,"Anderson, Gary",15,20,9,20,20,20,20,20,5
+1538,sr:sport_event:66098028,"Anderson, Gary",16,20,14,20,20,20,9,1,9
+1537,sr:sport_event:66098028,"Anderson, Gary",17,20,14,20,20,20,20,19,9
+1533,sr:sport_event:66098028,"van Veen, Gian",17,20,3,20,19,17,15,19,19
+1532,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,19,20,19
+1531,sr:sport_event:66098028,"Anderson, Gary",19,20,5,20,20,20,20,20,5
+1530,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1529,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,3
+1528,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,19,1
+1527,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1526,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1525,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,18,20,5
+1524,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,3,20,1
+1523,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1522,sr:sport_event:66098028,"Anderson, Gary",20,20,1,20,20,20,20,20,20
+1521,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1520,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1519,sr:sport_event:66098028,"van Veen, Gian",8,20,8,20,8,8,8,8,8
+1518,sr:sport_event:66098028,"van Veen, Gian",20,20,14,20,14,20,14,9,14
+1517,sr:sport_event:66098028,"Anderson, Gary",18,20,5,20,20,20,20,20,20
+1516,sr:sport_event:66098028,"Anderson, Gary",20,20,19,20,20,20,18,20,15
+1515,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1514,sr:sport_event:66098028,"van Veen, Gian",20,20,9,20,20,20,7,20,BULL
+1513,sr:sport_event:66098028,"van Veen, Gian",20,20,9,20,20,20,9,20,9
+1512,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1511,sr:sport_event:66098028,"Anderson, Gary",1,20,5,20,20,20,20,20,5
+1510,sr:sport_event:66098028,"Anderson, Gary",20,20,20,20,20,20,20,20,20
+1509,sr:sport_event:66098028,"van Veen, Gian",17,20,19,20,19,19,19,19,17
+1508,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1507,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1506,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1505,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1504,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1503,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+1502,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1501,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1500,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1499,sr:sport_event:66098028,"van Veen, Gian",19,20,1,20,19,19,19,19,19
+1498,sr:sport_event:66098028,"Anderson, Gary",12,20,14,20,20,20,9,20,9
+1497,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1496,sr:sport_event:66098028,"van Veen, Gian",19,20,15,20,19,17,15,19,17
+1495,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1494,sr:sport_event:66098028,"Anderson, Gary",4,20,5,20,20,20,5,20,5
+1493,sr:sport_event:66098028,"Anderson, Gary",18,20,20,20,20,20,20,20,15
+1492,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,17,19,19
+1491,sr:sport_event:66098028,"Anderson, Gary",7,20,5,20,20,20,20,20,5
+1489,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1488,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1487,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,19,19,19
+1486,sr:sport_event:66098028,"Anderson, Gary",7,20,18,20,20,20,20,20,5
+1485,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1484,sr:sport_event:66098028,"van Veen, Gian",16,20,8,20,8,8,8,8,8
+1483,sr:sport_event:66098028,"van Veen, Gian",16,20,8,20,8,8,8,8,8
+1482,sr:sport_event:66098028,"Anderson, Gary",20,20,1,20,20,20,20,20,20
+1481,sr:sport_event:66098028,"Anderson, Gary",20,20,1,20,20,20,20,20,20
+1480,sr:sport_event:66098028,"Anderson, Gary",20,20,4,20,20,20,20,5,20
+1479,sr:sport_event:66098028,"van Veen, Gian",16,20,11,20,8,8,11,8,8
+1478,sr:sport_event:66098028,"van Veen, Gian",20,20,8,20,20,20,16,19,8
+1477,sr:sport_event:66098028,"Anderson, Gary",19,20,18,20,20,20,5,20,5
+1476,sr:sport_event:66098028,"Anderson, Gary",19,20,5,20,20,20,20,20,5
+1475,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1474,sr:sport_event:66098028,"van Veen, Gian",BULL,20,3,20,19,19,19,19,19
+1473,sr:sport_event:66098028,"van Veen, Gian",20,20,19,20,19,19,19,19,19
+1472,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1471,sr:sport_event:66098028,"Anderson, Gary",20,20,19,20,20,20,19,20,19
+1470,sr:sport_event:66098028,"van Veen, Gian",19,20,19,20,19,19,19,19,17
+1469,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,19,20
+1468,sr:sport_event:66098028,"Anderson, Gary",18,20,9,20,20,20,20,BULL,20
+1467,sr:sport_event:66098028,"Anderson, Gary",19,20,1,20,20,20,1,20,20
+1466,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,19,19,1
+1465,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1464,sr:sport_event:66098028,"Anderson, Gary",5,20,14,20,20,20,9,20,9
+1463,sr:sport_event:66098028,"van Veen, Gian",19,20,8,20,19,19,16,19,16
+1462,sr:sport_event:66098028,"van Veen, Gian",20,20,18,20,20,20,7,20,9
+1461,sr:sport_event:66098028,"Anderson, Gary",10,20,9,20,20,20,18,20,5
+1460,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1459,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1458,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,20
+1457,sr:sport_event:66098028,"van Veen, Gian",18,20,3,20,19,20,19,20,19
+1456,sr:sport_event:66098028,"van Veen, Gian",20,20,5,20,20,20,1,20,1
+1455,sr:sport_event:66098028,"Anderson, Gary",15,20,18,20,20,20,20,18,20
+1454,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,18,20,5
+1453,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,17,20,18
+1452,sr:sport_event:66098028,"van Veen, Gian",18,20,20,20,20,20,1,20,20
+1451,sr:sport_event:66098028,"van Veen, Gian",19,20,19,20,20,20,19,19,17
+1450,sr:sport_event:66098028,"Anderson, Gary",19,20,5,20,20,20,20,20,5
+1449,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,20,20,20
+1448,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,20,19,20,19
+1447,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1446,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1445,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1443,sr:sport_event:66098028,"van Veen, Gian",20,20,14,20,20,20,14,20,9
+1442,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,9,1,5
+1441,sr:sport_event:66098028,"Anderson, Gary",3,20,14,20,20,20,9,3,9
+1440,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,3,19,3
+1439,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1438,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1437,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1436,sr:sport_event:66098028,"van Veen, Gian",19,20,15,20,19,19,19,19,15
+1435,sr:sport_event:66098028,"Anderson, Gary",18,20,5,20,20,20,20,20,5
+1434,sr:sport_event:66098028,"Anderson, Gary",18,20,18,20,20,20,20,20,5
+1433,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1432,sr:sport_event:66098028,"van Veen, Gian",19,20,1,20,20,20,19,20,19
+1431,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1430,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1429,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,19,19,19
+1428,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1427,sr:sport_event:66098028,"Anderson, Gary",3,20,5,20,20,20,20,20,20
+1426,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1425,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1424,sr:sport_event:66098028,"van Veen, Gian",18,20,1,20,19,19,19,20,19
+1423,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,19,20,3,5,1
+1422,sr:sport_event:66098028,"van Veen, Gian",5,20,1,20,20,20,3,20,3
+1420,sr:sport_event:66098028,"Anderson, Gary",16,20,14,20,20,20,9,5,9
+1419,sr:sport_event:66098028,"van Veen, Gian",19,20,BULL,20,19,19,19,19,19
+1418,sr:sport_event:66098028,"Anderson, Gary",8,20,9,20,20,20,9,20,9
+1417,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1416,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1415,sr:sport_event:66098028,"van Veen, Gian",1,20,5,20,20,20,1,20,20
+1414,sr:sport_event:66098028,"van Veen, Gian",20,20,18,20,20,20,18,20,5
+1413,sr:sport_event:66098028,"van Veen, Gian",BULL,20,3,20,19,20,19,19,3
+1412,sr:sport_event:66098028,"Anderson, Gary",19,20,5,20,20,20,20,20,20
+1411,sr:sport_event:66098028,"Anderson, Gary",1,20,5,20,20,20,20,20,5
+1410,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1409,sr:sport_event:66098028,"van Veen, Gian",BULL,20,1,20,19,20,19,19,19
+1408,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1407,sr:sport_event:66098028,"Anderson, Gary",19,20,1,20,20,20,1,20,20
+1406,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1405,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,19,19,19
+1404,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,19,1
+1403,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1402,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1401,sr:sport_event:66098028,"van Veen, Gian",16,20,8,20,19,19,16,19,8
+1400,sr:sport_event:66098028,"van Veen, Gian",19,20,16,20,16,16,16,19,8
+1399,sr:sport_event:66098028,"Anderson, Gary",19,20,20,20,20,20,20,20,20
+1398,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1397,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1396,sr:sport_event:66098028,"van Veen, Gian",20,20,8,20,19,20,16,16,16
+1395,sr:sport_event:66098028,"van Veen, Gian",20,20,9,20,14,20,16,9,14
+1394,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1393,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1392,sr:sport_event:66098028,"Anderson, Gary",5,20,18,20,20,20,18,20,18
+1391,sr:sport_event:66098028,"van Veen, Gian",20,20,BULL,20,20,20,19,19,19
+1390,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,19,20
+1389,sr:sport_event:66098028,"van Veen, Gian",20,20,5,20,20,20,20,20,20
+1388,sr:sport_event:66098028,"Anderson, Gary",19,20,17,20,20,20,1,20,20
+1387,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1386,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,19,19,3
+1385,sr:sport_event:66098028,"Anderson, Gary",19,20,5,20,20,20,20,20,5
+1384,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1383,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,18
+1382,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,19
+1381,sr:sport_event:66098028,"van Veen, Gian",20,20,5,20,20,20,1,20,1
+1380,sr:sport_event:66098028,"van Veen, Gian",20,20,9,20,20,20,14,20,9
+1379,sr:sport_event:66098028,"van Veen, Gian",17,20,15,20,17,19,17,19,17
+1378,sr:sport_event:66098028,"van Veen, Gian",20,20,9,20,20,20,14,20,9
+1377,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1376,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1375,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,19,19,19
+1374,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1373,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1372,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1371,sr:sport_event:66098028,"van Veen, Gian",20,20,4,20,20,20,19,19,19
+1370,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1369,sr:sport_event:66098028,"van Veen, Gian",20,20,18,20,19,19,18,15,17
+1368,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1367,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1366,sr:sport_event:66098028,"van Veen, Gian",20,20,15,20,19,20,19,19,17
+1365,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,3,20,3
+1364,sr:sport_event:66098028,"Anderson, Gary",19,20,1,20,20,20,1,20,20
+1363,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1362,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,19,19,19,20,19
+1361,sr:sport_event:66098028,"van Veen, Gian",5,20,1,20,20,20,20,20,20
+1360,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,9,1,9
+1359,sr:sport_event:66098028,"Anderson, Gary",16,20,14,20,20,14,9,1,9
+1358,sr:sport_event:66098028,"Anderson, Gary",16,20,14,20,20,20,1,1,9
+1357,sr:sport_event:66098028,"van Veen, Gian",BULL,20,3,20,19,19,19,19,19
+1356,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,20
+1355,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,3,19,3
+1354,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1353,sr:sport_event:66098028,"Anderson, Gary",BULL,20,9,20,20,20,9,1,9
+1352,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,19,19,19
+1351,sr:sport_event:66098028,"Anderson, Gary",5,20,5,20,20,20,20,20,5
+1350,sr:sport_event:66098028,"van Veen, Gian",5,20,19,20,19,19,19,19,17
+1349,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,20,20,20
+1348,sr:sport_event:66098028,"van Veen, Gian",20,20,5,20,10,10,10,20,10
+1347,sr:sport_event:66098028,"Anderson, Gary",18,20,18,20,20,20,5,20,5
+1346,sr:sport_event:66098028,"Anderson, Gary",19,20,18,20,20,20,20,20,20
+1345,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,20
+1344,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,20,19,19,19
+1343,sr:sport_event:66098028,"van Veen, Gian",20,20,19,20,19,19,19,19,19
+1342,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1341,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1340,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1339,sr:sport_event:66098028,"van Veen, Gian",16,20,8,20,8,8,8,8,8
+1338,sr:sport_event:66098028,"Anderson, Gary",1,20,5,20,20,20,5,20,5
+1337,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1336,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+1335,sr:sport_event:66098028,"van Veen, Gian",19,20,16,20,19,19,16,19,16
+1334,sr:sport_event:66098028,"van Veen, Gian",1,20,14,20,20,20,16,19,8
+1333,sr:sport_event:66098028,"van Veen, Gian",20,20,9,20,20,20,14,20,9
+1332,sr:sport_event:66098028,"Anderson, Gary",18,20,18,20,20,20,20,20,5
+1331,sr:sport_event:66098028,"Anderson, Gary",19,20,1,20,20,20,1,20,5
+1330,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,18
+1329,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1328,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1327,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1326,sr:sport_event:66098028,"van Veen, Gian",19,20,3,20,19,19,19,19,19
+1325,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+1324,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1323,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,18,20
+1322,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,20
+1321,sr:sport_event:66098028,"van Veen, Gian",20,20,15,20,19,19,17,2,15
+1320,sr:sport_event:66098028,"van Veen, Gian",16,20,8,20,8,8,8,8,8
+1319,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,20,20,5
+1318,sr:sport_event:66098028,"Anderson, Gary",19,20,14,20,20,20,1,1,5
+1317,sr:sport_event:66098028,"Anderson, Gary",BULL,20,14,20,20,20,20,1,5
+1316,sr:sport_event:66098028,"Anderson, Gary",19,20,5,20,20,20,20,20,5
+1315,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,20,3,19,3
+1314,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,20,19,19,19
+1313,sr:sport_event:66098028,"Anderson, Gary",18,20,5,20,20,20,5,20,5
+1312,sr:sport_event:66098028,"Anderson, Gary",19,20,5,20,20,20,20,20,20
+1311,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+1310,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,19,20,1,20,19
+1309,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,1,20,1
+1308,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+1307,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+1306,sr:sport_event:66098028,"van Veen, Gian",20,20,14,20,1,BULL,16,8,14
+1305,sr:sport_event:66098028,"van Veen, Gian",14,20,16,20,16,19,16,19,8
+1304,sr:sport_event:66098032,"Littler, Luke",15,20,4,20,4,10,4,10,12
+1303,sr:sport_event:66098032,"Littler, Luke",19,20,11,20,11,16,11,16,12
+1302,sr:sport_event:66098032,"van Veen, Gian",5,20,17,20,20,20,20,20,12
+1301,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+1300,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,5,20,12
+1299,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,20,14,12
+1298,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1297,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,19,19,12
+1296,sr:sport_event:66098032,"van Veen, Gian",20,20,20,20,20,20,20,20,12
+1295,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,20,20,19,20,12
+1294,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,7,12
+1293,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+1292,sr:sport_event:66098032,"van Veen, Gian",20,20,18,20,20,20,20,20,12
+1290,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,19,20,BULL,19,19
+1289,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,19
+1288,sr:sport_event:66098032,"van Veen, Gian",20,20,18,20,20,20,20,20,12
+1287,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,20,20,12
+1286,sr:sport_event:66098032,"Littler, Luke",6,20,13,20,19,19,4,19,12
+1285,sr:sport_event:66098032,"van Veen, Gian",19,20,BULL,20,20,20,19,20,12
+1284,sr:sport_event:66098032,"Littler, Luke",15,20,10,20,17,19,10,7,12
+1283,sr:sport_event:66098032,"Littler, Luke",20,20,9,20,14,20,14,5,12
+1282,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1281,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1280,sr:sport_event:66098032,"van Veen, Gian",5,20,17,20,20,20,20,19,12
+1279,sr:sport_event:66098032,"Littler, Luke",19,20,14,20,20,20,5,20,12
+1278,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,5,20,12
+1277,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,20,20,BULL,20,12
+1276,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,5,12
+1275,sr:sport_event:66098032,"Littler, Luke",1,20,14,20,20,20,5,19,12
+1274,sr:sport_event:66098032,"van Veen, Gian",3,20,19,20,20,20,19,19,12
+1273,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,7,20,12
+1272,sr:sport_event:66098032,"van Veen, Gian",20,20,12,20,20,20,14,20,12
+1271,sr:sport_event:66098032,"van Veen, Gian",16,20,16,20,16,16,16,16,12
+1270,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,19
+1269,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,20,BULL,5,12
+1268,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,5,12
+1267,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,9,20,12
+1266,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,16,16,12
+1265,sr:sport_event:66098032,"van Veen, Gian",20,20,16,20,20,20,9,20,12
+1263,sr:sport_event:66098032,"van Veen, Gian",20,20,16,20,20,20,9,20,12
+1262,sr:sport_event:66098032,"Littler, Luke",20,20,BULL,20,20,20,20,5,12
+1261,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+1260,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,5,20,12
+1259,sr:sport_event:66098032,"Littler, Luke",2,20,19,20,19,19,BULL,19,12
+1258,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,5,20,12
+1257,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,1,19,12
+1256,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,18,20,12
+1255,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1254,sr:sport_event:66098032,"Littler, Luke",3,20,11,20,BULL,BULL,16,16,12
+1253,sr:sport_event:66098032,"Littler, Luke",6,20,4,20,16,16,17,16,12
+1252,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,14,14,14,14,12
+1251,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,20,20,12
+1250,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,20,20,12
+1249,sr:sport_event:66098032,"Littler, Luke",16,20,11,20,11,16,11,16,12
+1248,sr:sport_event:66098032,"Littler, Luke",19,20,11,20,11,16,11,16,12
+1247,sr:sport_event:66098032,"Littler, Luke",19,20,11,20,11,14,11,11,12
+1246,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,20,20,BULL,17,12
+1244,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,12
+1243,sr:sport_event:66098032,"van Veen, Gian",20,20,15,20,20,13,13,20,12
+1242,sr:sport_event:66098032,"Littler, Luke",19,20,20,20,20,20,20,20,12
+1241,sr:sport_event:66098032,"van Veen, Gian",20,20,15,20,20,20,7,20,12
+1240,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1239,sr:sport_event:66098032,"van Veen, Gian",19,20,15,20,20,10,3,13,12
+1238,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,20,20,BULL,7,12
+1237,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,5,20,12
+1236,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,20,20,BULL,BULL,12
+1235,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,19,18,12
+1234,sr:sport_event:66098032,"van Veen, Gian",20,20,15,20,20,10,10,20,12
+1233,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,19,19,19,12
+1232,sr:sport_event:66098032,"Littler, Luke",1,20,14,20,20,20,20,20,12
+1231,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,20,20,19,20,12
+1230,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1229,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,20,20,12
+1228,sr:sport_event:66098032,"Littler, Luke",20,20,9,20,14,20,14,20,12
+1226,sr:sport_event:66098032,"van Veen, Gian",18,20,BULL,20,20,20,BULL,20,12
+1225,sr:sport_event:66098032,"van Veen, Gian",20,20,16,20,20,20,14,20,12
+1224,sr:sport_event:66098032,"Littler, Luke",7,20,19,20,20,20,BULL,BULL,12
+1223,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1222,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1221,sr:sport_event:66098032,"Littler, Luke",20,20,7,20,20,20,18,18,19
+1220,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,5,20,12
+1219,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+1218,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,19,20,12
+1217,sr:sport_event:66098032,"van Veen, Gian",20,20,20,20,20,20,20,20,12
+1216,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,5,20,12
+1215,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,5,20,12
+1214,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,19,12
+1213,sr:sport_event:66098032,"Littler, Luke",20,20,12,20,9,20,9,20,12
+1212,sr:sport_event:66098032,"Littler, Luke",16,20,11,20,11,16,11,16,12
+1211,sr:sport_event:66098032,"Littler, Luke",8,20,11,20,11,16,11,8,12
+1210,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,16,19,12
+1209,sr:sport_event:66098032,"van Veen, Gian",19,20,16,20,16,16,16,16,12
+1208,sr:sport_event:66098032,"Littler, Luke",20,20,11,20,14,20,14,7,12
+1207,sr:sport_event:66098032,"Littler, Luke",7,20,11,20,11,19,14,11,12
+1206,sr:sport_event:66098032,"Littler, Luke",19,20,14,20,14,20,14,7,12
+1205,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,17,17,12
+1204,sr:sport_event:66098032,"van Veen, Gian",5,20,19,20,20,20,7,20,12
+1203,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,20,20,12
+1202,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1201,sr:sport_event:66098032,"van Veen, Gian",20,20,3,20,20,20,19,20,12
+1200,sr:sport_event:66098032,"van Veen, Gian",20,20,15,20,20,20,7,20,12
+1199,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1198,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1197,sr:sport_event:66098032,"Littler, Luke",20,20,18,20,18,20,18,18,12
+1196,sr:sport_event:66098032,"van Veen, Gian",19,20,19,20,19,19,19,19,12
+1194,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,14,20,14,20,12
+1193,sr:sport_event:66098032,"van Veen, Gian",16,20,3,20,BULL,BULL,16,BULL,12
+1192,sr:sport_event:66098032,"van Veen, Gian",18,20,17,20,BULL,BULL,16,BULL,12
+1191,sr:sport_event:66098032,"Littler, Luke",16,20,11,20,11,11,11,11,12
+1190,sr:sport_event:66098032,"Littler, Luke",19,20,11,20,11,16,11,11,12
+1189,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,12
+1188,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1187,sr:sport_event:66098032,"van Veen, Gian",20,20,14,20,20,20,20,20,9
+1186,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,18,20,18,20,12
+1185,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,20,20,12
+1184,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,5,20,12
+1183,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1182,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1181,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1180,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,19,19,19,12
+1179,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1178,sr:sport_event:66098032,"van Veen, Gian",17,20,15,20,20,20,19,20,12
+1177,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,15,20,12
+1176,sr:sport_event:66098032,"van Veen, Gian",20,20,20,20,20,20,20,20,12
+1175,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1174,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1173,sr:sport_event:66098032,"Littler, Luke",20,20,9,20,20,20,5,20,12
+1172,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,18,20,12
+1171,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,19,20,12
+1170,sr:sport_event:66098032,"Littler, Luke",20,20,12,20,20,20,14,20,12
+1169,sr:sport_event:66098032,"Littler, Luke",20,20,9,20,20,20,14,5,12
+1168,sr:sport_event:66098032,"van Veen, Gian",15,20,15,20,17,19,17,15,12
+1167,sr:sport_event:66098032,"van Veen, Gian",1,20,BULL,20,20,20,7,18,12
+1166,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,14,20,12
+1165,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,11,20,14,14,12
+1164,sr:sport_event:66098032,"van Veen, Gian",19,20,19,20,20,20,19,20,12
+1163,sr:sport_event:66098032,"Littler, Luke",BULL,20,19,20,20,20,20,20,12
+1162,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,5,20,12
+1161,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,5,20,12
+1160,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,19,18,12
+1159,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,12
+1158,sr:sport_event:66098032,"van Veen, Gian",1,20,19,20,20,20,20,20,12
+1157,sr:sport_event:66098032,"Littler, Luke",19,20,20,20,20,20,20,20,12
+1155,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,5,14,12
+1154,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,5,19,12
+1153,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,5,12
+1152,sr:sport_event:66098032,"Littler, Luke",5,20,9,20,9,9,9,20,19
+1151,sr:sport_event:66098032,"Littler, Luke",10,20,10,20,3,10,3,10,12
+1150,sr:sport_event:66098032,"Littler, Luke",5,20,9,20,14,14,14,12,12
+1148,sr:sport_event:66098032,"van Veen, Gian",16,20,BULL,20,16,16,8,16,12
+1147,sr:sport_event:66098032,"van Veen, Gian",16,20,16,20,16,16,16,16,12
+1146,sr:sport_event:66098032,"Littler, Luke",BULL,20,11,20,14,20,14,20,12
+1145,sr:sport_event:66098032,"Littler, Luke",12,20,9,20,14,20,14,12,12
+1144,sr:sport_event:66098032,"Littler, Luke",19,20,11,20,11,16,11,11,12
+1143,sr:sport_event:66098032,"van Veen, Gian",20,20,15,20,20,20,19,20,12
+1142,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,19,20,12
+1141,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1140,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,19,20,12
+1139,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,5,20,12
+1138,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,5,20,12
+1137,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,7,20,12
+1136,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,20,20,12
+1135,sr:sport_event:66098032,"van Veen, Gian",20,20,15,20,20,13,10,20,12
+1134,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+1133,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+1132,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,5,20,12
+1131,sr:sport_event:66098032,"van Veen, Gian",17,20,3,20,19,19,19,19,12
+1130,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,20,20,12
+1129,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,20,20,12
+1128,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,5,20,12
+1127,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1126,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+1125,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,19,20,12
+1124,sr:sport_event:66098032,"van Veen, Gian",20,20,20,20,20,20,20,20,12
+1123,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+1122,sr:sport_event:66098032,"van Veen, Gian",20,20,16,20,20,16,14,20,12
+1120,sr:sport_event:66098032,"Littler, Luke",14,20,11,20,11,16,11,8,12
+1119,sr:sport_event:66098032,"van Veen, Gian",20,20,18,20,20,20,7,18,12
+1118,sr:sport_event:66098032,"van Veen, Gian",20,20,18,20,20,20,20,20,12
+1117,sr:sport_event:66098032,"Littler, Luke",7,20,16,20,16,16,16,16,12
+1116,sr:sport_event:66098032,"Littler, Luke",20,20,9,20,14,20,14,20,12
+1115,sr:sport_event:66098032,"van Veen, Gian",17,20,17,20,19,19,17,17,12
+1114,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,7,20,12
+1113,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1112,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1111,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1110,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+1109,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+1108,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,20,20,12
+1107,sr:sport_event:66098032,"Littler, Luke",20,20,9,20,20,20,20,20,12
+1106,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1105,sr:sport_event:66098032,"Littler, Luke",20,20,9,20,20,20,5,20,12
+1104,sr:sport_event:66098032,"Littler, Luke",5,20,12,20,9,9,9,12,19
+1103,sr:sport_event:66098032,"Littler, Luke",10,20,10,20,10,19,10,10,12
+1102,sr:sport_event:66098032,"Littler, Luke",10,20,10,20,13,19,17,17,12
+1101,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,14,20,12
+1100,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,7,20,12
+1099,sr:sport_event:66098032,"Littler, Luke",20,20,12,20,20,20,9,20,12
+1098,sr:sport_event:66098032,"Littler, Luke",12,20,14,20,14,16,14,11,12
+1097,sr:sport_event:66098032,"Littler, Luke",19,20,14,20,14,20,14,20,12
+1096,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,19,18,20,12
+1095,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1094,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,20,19,20,12
+1093,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1092,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,BULL,20,12
+1091,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,7,20,12
+1090,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+1089,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,20,BULL,5,12
+1088,sr:sport_event:66098032,"Littler, Luke",5,20,19,20,20,20,20,20,12
+1087,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+1086,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,12
+1085,sr:sport_event:66098032,"Littler, Luke",19,20,3,20,19,19,19,19,12
+1084,sr:sport_event:66098032,"Littler, Luke",20,20,13,20,20,20,20,20,19
+1083,sr:sport_event:66098032,"Littler, Luke",10,20,10,20,10,10,10,19,12
+1082,sr:sport_event:66098032,"Littler, Luke",20,20,12,20,14,20,14,12,12
+1081,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+1080,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,12
+1079,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,12
+1078,sr:sport_event:66098032,"Littler, Luke",BULL,20,14,20,16,16,14,19,12
+1077,sr:sport_event:66098032,"Littler, Luke",20,20,11,20,11,16,14,12,12
+1076,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,14,20,12
+1075,sr:sport_event:66098032,"van Veen, Gian",17,20,15,20,17,19,17,17,12
+1074,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,19,20,12
+1073,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,5,20,12
+1072,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,19,20,12
+1071,sr:sport_event:66098032,"van Veen, Gian",4,20,17,20,20,20,BULL,20,12
+1070,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,20,19,BULL,19,12
+1069,sr:sport_event:66098032,"van Veen, Gian",20,20,15,20,20,10,13,20,12
+1068,sr:sport_event:66098032,"Littler, Luke",17,20,19,20,19,19,BULL,19,12
+1067,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1066,sr:sport_event:66098032,"van Veen, Gian",17,20,17,20,19,17,17,17,12
+1065,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1064,sr:sport_event:66098032,"van Veen, Gian",20,20,20,20,20,20,7,20,12
+1063,sr:sport_event:66098032,"Littler, Luke",20,20,18,20,20,20,7,20,12
+1062,sr:sport_event:66098032,"Littler, Luke",14,20,14,20,20,20,14,7,12
+1061,sr:sport_event:66098032,"van Veen, Gian",19,20,15,20,BULL,BULL,BULL,BULL,12
+1060,sr:sport_event:66098032,"van Veen, Gian",1,20,BULL,20,20,20,14,20,12
+1059,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,14,20,12
+1058,sr:sport_event:66098032,"Littler, Luke",17,20,11,20,7,16,14,14,12
+1057,sr:sport_event:66098032,"Littler, Luke",1,20,14,20,16,20,11,7,12
+1056,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1055,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,12
+1054,sr:sport_event:66098032,"van Veen, Gian",20,20,3,20,19,20,19,19,12
+1053,sr:sport_event:66098032,"Littler, Luke",19,20,7,20,19,20,7,19,12
+1052,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,19
+1051,sr:sport_event:66098032,"van Veen, Gian",20,20,15,20,20,10,10,20,12
+1050,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,20,BULL,19,12
+1048,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,20,19,12
+1047,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,12
+1046,sr:sport_event:66098032,"van Veen, Gian",5,20,17,20,19,20,19,19,12
+1045,sr:sport_event:66098032,"van Veen, Gian",20,20,15,20,20,20,BULL,20,12
+1044,sr:sport_event:66098032,"van Veen, Gian",19,20,16,20,16,16,16,16,12
+1043,sr:sport_event:66098032,"Littler, Luke",BULL,20,19,20,16,16,14,16,12
+1042,sr:sport_event:66098032,"Littler, Luke",18,20,4,20,16,16,14,5,12
+1041,sr:sport_event:66098032,"Littler, Luke",18,20,9,20,14,20,14,20,12
+1040,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1039,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,20,20,12
+1038,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1037,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,5,20,12
+1036,sr:sport_event:66098032,"van Veen, Gian",1,20,3,20,20,20,19,19,12
+1035,sr:sport_event:66098032,"van Veen, Gian",1,20,19,20,20,20,19,20,12
+1034,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1033,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,5,20,12
+1032,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,5,20,12
+1031,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,5,20,12
+1030,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+1029,sr:sport_event:66098032,"van Veen, Gian",20,20,15,20,20,20,7,20,19
+1028,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+1027,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,19,19,19,12
+1026,sr:sport_event:66098032,"Littler, Luke",20,20,7,20,20,20,20,20,12
+1025,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+1024,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,19,20,12
+1023,sr:sport_event:66098032,"van Veen, Gian",20,20,3,20,20,20,19,20,12
+1021,sr:sport_event:66098032,"van Veen, Gian",19,20,15,20,19,13,3,15,12
+1020,sr:sport_event:66098032,"van Veen, Gian",19,20,15,20,19,13,3,15,12
+1019,sr:sport_event:66098032,"Littler, Luke",12,20,9,20,9,4,9,20,19
+1018,sr:sport_event:66098032,"Littler, Luke",19,20,11,20,16,16,11,16,12
+1016,sr:sport_event:66098032,"Littler, Luke",19,20,11,20,11,BULL,14,16,12
+1015,sr:sport_event:66098032,"van Veen, Gian",1,20,1,20,20,20,20,20,12
+1014,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,20,20,12
+1013,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+1012,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,BULL,20,12
+1011,sr:sport_event:66098032,"van Veen, Gian",3,20,17,20,20,20,19,20,12
+1010,sr:sport_event:66098032,"Littler, Luke",18,20,7,20,20,20,18,20,12
+1009,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+1008,sr:sport_event:66098032,"van Veen, Gian",20,20,18,20,20,20,20,20,12
+1007,sr:sport_event:66098032,"van Veen, Gian",18,20,13,20,20,20,4,20,12
+1006,sr:sport_event:66098032,"van Veen, Gian",18,20,BULL,20,20,20,BULL,20,12
+1005,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,7,19,17,17,12
+1004,sr:sport_event:66098032,"Littler, Luke",17,20,3,20,19,19,16,19,12
+1003,sr:sport_event:66098032,"Littler, Luke",BULL,20,16,20,16,16,14,20,12
+1002,sr:sport_event:66098032,"Littler, Luke",20,20,11,20,11,16,11,8,12
+1001,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,19,19,12
+1000,sr:sport_event:66098032,"van Veen, Gian",20,20,20,20,20,20,20,20,12
+999,sr:sport_event:66098032,"Littler, Luke",BULL,20,19,20,20,20,19,20,12
+998,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+997,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+996,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+995,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,20,BULL,19,12
+994,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+993,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+992,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,19,18,12
+991,sr:sport_event:66098032,"Littler, Luke",20,20,7,20,20,20,20,20,12
+990,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,5,20,12
+989,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,5,20,12
+988,sr:sport_event:66098032,"van Veen, Gian",1,20,19,20,20,20,7,20,12
+987,sr:sport_event:66098032,"van Veen, Gian",5,20,17,20,20,20,19,20,12
+986,sr:sport_event:66098032,"Littler, Luke",20,20,9,20,20,20,14,20,12
+985,sr:sport_event:66098032,"Littler, Luke",12,20,14,20,14,20,14,14,12
+984,sr:sport_event:66098032,"Littler, Luke",14,20,14,20,14,20,14,14,12
+983,sr:sport_event:66098032,"van Veen, Gian",BULL,20,17,20,20,20,16,BULL,12
+982,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,16,17,12
+981,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,16,BULL,12
+980,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,5,20,12
+979,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,20,20,12
+978,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,5,20,12
+977,sr:sport_event:66098032,"van Veen, Gian",19,20,15,20,19,3,3,15,12
+976,sr:sport_event:66098032,"Littler, Luke",20,20,7,20,20,20,19,7,12
+975,sr:sport_event:66098032,"Littler, Luke",5,20,3,20,20,20,20,20,12
+974,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+973,sr:sport_event:66098032,"van Veen, Gian",19,20,BULL,20,20,20,19,20,12
+972,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,20,20,12
+971,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,20,19,12
+970,sr:sport_event:66098032,"Littler, Luke",20,20,7,20,20,20,20,20,12
+969,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,19,19,12
+968,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+967,sr:sport_event:66098032,"Littler, Luke",20,20,3,20,20,20,19,20,12
+966,sr:sport_event:66098032,"Littler, Luke",20,20,3,20,20,20,19,20,12
+965,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,19,20,12
+964,sr:sport_event:66098032,"Littler, Luke",BULL,20,9,20,16,16,9,7,12
+963,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,14,20,12
+962,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,14,20,12
+961,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,20,20,BULL,19,12
+960,sr:sport_event:66098032,"Littler, Luke",17,20,19,20,19,19,BULL,19,12
+959,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+958,sr:sport_event:66098032,"van Veen, Gian",1,20,17,20,20,20,BULL,20,12
+957,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+956,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,7,20,12
+955,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,BULL,19,12
+954,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+953,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,20,19,12
+952,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,17,17,12
+951,sr:sport_event:66098032,"Littler, Luke",19,20,3,20,19,19,19,19,12
+950,sr:sport_event:66098032,"Littler, Luke",20,20,3,20,19,20,19,19,12
+949,sr:sport_event:66098032,"Littler, Luke",12,20,9,20,14,20,14,14,12
+948,sr:sport_event:66098032,"Littler, Luke",19,20,17,20,19,19,17,17,12
+947,sr:sport_event:66098032,"van Veen, Gian",BULL,20,16,20,BULL,20,16,BULL,12
+946,sr:sport_event:66098032,"van Veen, Gian",19,20,3,20,16,19,16,16,12
+945,sr:sport_event:66098032,"van Veen, Gian",19,20,3,20,19,19,BULL,19,12
+944,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+943,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,19,20,12
+942,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+941,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,20,19,19,17,12
+940,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+939,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,20,20,12
+938,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,BULL,19,12
+937,sr:sport_event:66098032,"Littler, Luke",20,20,17,20,20,20,20,20,12
+936,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,20,20,12
+935,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+934,sr:sport_event:66098032,"van Veen, Gian",20,20,20,20,20,20,20,20,12
+933,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+932,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,18,20,12
+931,sr:sport_event:66098032,"Littler, Luke",20,20,9,20,14,20,14,20,12
+930,sr:sport_event:66098032,"Littler, Luke",12,20,14,20,14,16,14,20,12
+929,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,14,20,14,14,12
+928,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,17,17,12
+927,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+926,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+925,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+924,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,19,20,BULL,19,12
+923,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,19,19,12
+922,sr:sport_event:66098032,"van Veen, Gian",20,20,5,20,20,20,1,20,12
+921,sr:sport_event:66098032,"Littler, Luke",5,20,17,20,20,20,20,19,12
+920,sr:sport_event:66098032,"Littler, Luke",BULL,20,19,20,20,20,18,19,12
+919,sr:sport_event:66098032,"Littler, Luke",19,20,3,20,15,19,15,10,12
+918,sr:sport_event:66098032,"van Veen, Gian",20,20,15,20,20,20,15,20,12
+917,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,18,20,12
+916,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+915,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,18,19,12
+913,sr:sport_event:66098032,"Littler, Luke",5,20,19,20,20,20,BULL,19,12
+912,sr:sport_event:66098032,"Littler, Luke",5,20,20,20,20,20,20,20,12
+911,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,20,20,BULL,20,12
+910,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+909,sr:sport_event:66098032,"Littler, Luke",BULL,20,11,20,16,16,16,16,12
+908,sr:sport_event:66098032,"Littler, Luke",19,20,3,20,17,16,17,16,12
+907,sr:sport_event:66098032,"Littler, Luke",19,20,11,20,19,16,14,16,12
+906,sr:sport_event:66098032,"van Veen, Gian",16,20,19,20,19,20,19,19,12
+905,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,18,20,12
+904,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,19,BULL,19,12
+903,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,18,20,12
+902,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+901,sr:sport_event:66098032,"van Veen, Gian",20,20,15,20,20,20,19,20,12
+900,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,18,20,12
+899,sr:sport_event:66098032,"Littler, Luke",20,20,17,20,19,19,18,19,12
+898,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,5,20,12
+897,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,20,20,12
+896,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,BULL,12
+895,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,BULL,19,12
+894,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,BULL,19,12
+893,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,20,19,12
+892,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+891,sr:sport_event:66098032,"van Veen, Gian",5,20,17,20,20,20,20,20,12
+890,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,18,20,12
+889,sr:sport_event:66098032,"Littler, Luke",20,20,10,20,18,20,4,20,12
+888,sr:sport_event:66098032,"Littler, Luke",19,20,3,20,19,19,17,19,12
+887,sr:sport_event:66098032,"Littler, Luke",19,20,11,20,19,19,17,19,12
+886,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+885,sr:sport_event:66098032,"van Veen, Gian",1,20,17,20,20,20,20,20,12
+884,sr:sport_event:66098032,"van Veen, Gian",20,20,18,20,20,20,7,18,19
+883,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,19,19,19,12
+882,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,5,20,12
+881,sr:sport_event:66098032,"van Veen, Gian",18,20,15,20,20,20,19,20,19
+879,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,19,17,12
+878,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+877,sr:sport_event:66098032,"Littler, Luke",18,20,19,20,20,20,18,20,12
+876,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+875,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+874,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,17,17,12
+873,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,19,19,19,12
+872,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+871,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,20,20,19,18,12
+870,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,19,18,19
+869,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,7,20,12
+868,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,20,BULL,19,12
+867,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,19,20,12
+866,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+865,sr:sport_event:66098032,"Littler, Luke",10,20,4,20,10,10,10,10,12
+864,sr:sport_event:66098032,"Littler, Luke",20,20,12,20,20,20,10,20,12
+863,sr:sport_event:66098032,"Littler, Luke",20,20,12,20,20,20,9,20,19
+861,sr:sport_event:66098032,"van Veen, Gian",17,20,15,20,17,19,17,3,12
+860,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,18,20,18,18,12
+859,sr:sport_event:66098032,"Littler, Luke",18,20,19,20,20,20,18,18,12
+858,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,18,20,12
+856,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+855,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+854,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,BULL,20,12
+853,sr:sport_event:66098032,"Littler, Luke",1,20,19,20,20,20,19,20,12
+852,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,19,20,BULL,BULL,12
+851,sr:sport_event:66098032,"Littler, Luke",20,20,10,20,10,20,7,5,12
+850,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+849,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,19,20,12
+848,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,18,20,12
+847,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+846,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+845,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,20,20,19,18,12
+844,sr:sport_event:66098032,"Littler, Luke",8,20,11,20,11,20,11,11,12
+842,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,19,20,19,20,12
+841,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+840,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,20,20,12
+839,sr:sport_event:66098032,"Littler, Luke",16,20,5,20,19,19,4,19,12
+838,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,14,20,12
+837,sr:sport_event:66098032,"van Veen, Gian",18,20,15,20,20,18,15,20,12
+836,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,12
+835,sr:sport_event:66098032,"Littler, Luke",5,20,5,20,20,20,20,20,12
+834,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,20,20,12
+833,sr:sport_event:66098032,"van Veen, Gian",18,20,17,20,20,20,BULL,20,12
+832,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,20,19,18,12
+831,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,19,19,19,12
+830,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+829,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,BULL,20,12
+828,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,19,18,12
+827,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,18,20,12
+826,sr:sport_event:66098032,"Littler, Luke",20,20,17,20,18,20,18,18,12
+825,sr:sport_event:66098032,"van Veen, Gian",8,20,16,20,16,16,8,8,12
+824,sr:sport_event:66098032,"van Veen, Gian",17,20,3,20,17,BULL,17,3,12
+823,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,16,20,12
+822,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,19,19,19,12
+821,sr:sport_event:66098032,"Littler, Luke",5,20,5,20,20,20,20,20,12
+820,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,19
+819,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+818,sr:sport_event:66098032,"Littler, Luke",20,20,7,20,20,20,20,20,12
+817,sr:sport_event:66098032,"Littler, Luke",5,20,5,20,18,20,18,20,12
+816,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+815,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+814,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,20,20,18,18,12
+813,sr:sport_event:66098032,"Littler, Luke",20,20,10,20,10,10,7,5,12
+812,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,20,20,17,17,12
+811,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+810,sr:sport_event:66098032,"van Veen, Gian",14,20,8,20,16,16,16,8,9
+809,sr:sport_event:66098032,"van Veen, Gian",19,20,16,20,16,19,16,16,12
+808,sr:sport_event:66098032,"van Veen, Gian",20,20,16,20,20,20,16,20,12
+807,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,12
+806,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+805,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+804,sr:sport_event:66098032,"Littler, Luke",20,20,18,20,20,20,18,20,12
+803,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,18,12
+802,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,20,19,19,19,12
+800,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+799,sr:sport_event:66098032,"van Veen, Gian",1,20,BULL,20,20,20,20,20,12
+798,sr:sport_event:66098032,"Littler, Luke",19,20,3,20,19,20,19,19,12
+797,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,20,20,12
+796,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,20,17,17,12
+795,sr:sport_event:66098032,"van Veen, Gian",20,20,1,20,20,20,20,20,12
+794,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,19,BULL,19,12
+793,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,6,20,BULL
+792,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+791,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+790,sr:sport_event:66098024,"Littler, Luke",16,20,6,20,18,19,6,BULL,6
+789,sr:sport_event:66098024,"Littler, Luke",19,20,17,20,19,19,BULL,19,6
+788,sr:sport_event:66098024,"Searle, Ryan",17,20,1,20,20,20,1,19,20
+787,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+786,sr:sport_event:66098024,"Littler, Luke",BULL,20,20,20,20,20,20,20,18
+784,sr:sport_event:66098024,"Littler, Luke",5,20,5,20,20,20,20,20,20
+783,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+782,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,5
+781,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,20
+780,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+779,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+778,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+777,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+776,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+775,sr:sport_event:66098024,"Littler, Luke",19,20,5,20,20,20,5,20,5
+774,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+773,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,19,5
+772,sr:sport_event:66098024,"Searle, Ryan",20,20,1,20,20,20,1,20,20
+771,sr:sport_event:66098024,"Searle, Ryan",20,20,1,20,20,20,1,20,20
+769,sr:sport_event:66098024,"Searle, Ryan",19,20,12,20,8,8,20,7,12
+768,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,14,20,7,12
+767,sr:sport_event:66098024,"Littler, Luke",7,20,3,20,12,19,12,16,12
+766,sr:sport_event:66098024,"Littler, Luke",14,20,6,20,18,18,BULL,20,BULL
+765,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+764,sr:sport_event:66098024,"Searle, Ryan",1,20,14,20,20,20,1,20,20
+763,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+762,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+761,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,18
+760,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+759,sr:sport_event:66098024,"Searle, Ryan",20,20,1,20,20,20,1,20,20
+758,sr:sport_event:66098024,"Littler, Luke",20,20,15,20,20,20,20,19,15
+757,sr:sport_event:66098024,"Littler, Luke",20,20,2,20,20,20,18,20,15
+756,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,18
+755,sr:sport_event:66098024,"Searle, Ryan",17,20,7,20,20,20,20,20,5
+754,sr:sport_event:66098024,"Searle, Ryan",20,20,17,20,20,20,20,20,10
+753,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+752,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+751,sr:sport_event:66098024,"Littler, Luke",20,20,4,20,20,20,20,17,15
+750,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,20
+749,sr:sport_event:66098024,"Littler, Luke",16,20,12,20,16,20,12,20,12
+748,sr:sport_event:66098024,"Littler, Luke",4,20,6,20,10,10,10,18,10
+747,sr:sport_event:66098024,"Littler, Luke",14,20,12,20,12,20,12,20,12
+746,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,18
+745,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+744,sr:sport_event:66098024,"Searle, Ryan",18,20,12,20,20,20,20,20,5
+743,sr:sport_event:66098024,"Searle, Ryan",19,20,14,20,20,20,1,19,14
+742,sr:sport_event:66098024,"Littler, Luke",19,20,15,20,19,19,15,19,17
+740,sr:sport_event:66098024,"Littler, Luke",5,20,5,20,20,20,5,20,5
+739,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,19,20,18,20,18
+738,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,18
+737,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+736,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+735,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+734,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+733,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,20
+732,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+731,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+730,sr:sport_event:66098024,"Searle, Ryan",5,20,12,20,20,20,20,20,5
+729,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,14
+728,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,18,20,18
+727,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+726,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+725,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+724,sr:sport_event:66098024,"Littler, Luke",19,20,17,20,19,19,17,19,6
+723,sr:sport_event:66098024,"Littler, Luke",19,20,6,20,19,19,6,19,10
+722,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,18,20,6
+721,sr:sport_event:66098024,"Searle, Ryan",18,20,9,20,20,20,20,20,20
+720,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+719,sr:sport_event:66098024,"Littler, Luke",BULL,20,18,20,20,20,18,20,18
+718,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+717,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,5
+716,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+715,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+714,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+713,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+712,sr:sport_event:66098024,"Searle, Ryan",1,20,7,20,20,20,20,20,5
+711,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+710,sr:sport_event:66098024,"Searle, Ryan",BULL,20,12,20,14,8,20,7,14
+709,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,14,20,7,12
+708,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,7,12
+707,sr:sport_event:66098024,"Littler, Luke",8,20,5,20,19,20,12,BULL,12
+706,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,18
+705,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+704,sr:sport_event:66098024,"Searle, Ryan",7,20,1,20,20,20,1,19,20
+703,sr:sport_event:66098024,"Littler, Luke",19,20,3,20,19,18,19,19,18
+702,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,18
+701,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,20
+700,sr:sport_event:66098024,"Littler, Luke",10,20,10,20,10,20,10,20,10
+699,sr:sport_event:66098024,"Littler, Luke",17,20,10,20,20,20,10,19,10
+698,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,5
+697,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,19,14
+696,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+695,sr:sport_event:66098024,"Littler, Luke",19,20,20,20,20,20,5,20,5
+694,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,18
+693,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+692,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+691,sr:sport_event:66098024,"Littler, Luke",19,20,20,20,20,20,20,20,5
+690,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+689,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+688,sr:sport_event:66098024,"Searle, Ryan",20,20,1,20,20,20,1,20,20
+687,sr:sport_event:66098024,"Littler, Luke",3,20,10,20,10,10,10,10,10
+686,sr:sport_event:66098024,"Searle, Ryan",10,20,12,20,20,20,20,5,12
+685,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,14,20,20,7,12
+684,sr:sport_event:66098024,"Searle, Ryan",7,20,7,20,8,8,20,7,14
+683,sr:sport_event:66098024,"Littler, Luke",6,20,10,20,10,20,10,20,10
+682,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+681,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+680,sr:sport_event:66098024,"Littler, Luke",5,20,6,20,19,20,12,20,12
+679,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,19,5
+678,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+677,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+676,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+675,sr:sport_event:66098024,"Littler, Luke",20,20,4,20,20,20,20,20,5
+674,sr:sport_event:66098024,"Searle, Ryan",1,20,14,20,20,20,20,20,5
+673,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+672,sr:sport_event:66098024,"Littler, Luke",20,20,7,20,20,20,5,20,5
+671,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+670,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+669,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+668,sr:sport_event:66098024,"Searle, Ryan",17,20,14,20,20,20,1,20,20
+667,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+666,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,18,6,18,BULL
+665,sr:sport_event:66098024,"Littler, Luke",7,20,6,20,19,20,BULL,19,BULL
+664,sr:sport_event:66098024,"Searle, Ryan",18,20,12,20,20,20,20,20,5
+663,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+662,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+661,sr:sport_event:66098024,"Littler, Luke",19,20,10,20,10,10,10,10,10
+660,sr:sport_event:66098024,"Littler, Luke",19,20,6,20,19,18,18,20,BULL
+659,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,18,20,BULL
+658,sr:sport_event:66098024,"Searle, Ryan",18,20,7,20,20,20,20,20,5
+657,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+656,sr:sport_event:66098024,"Littler, Luke",19,20,2,20,19,19,2,19,17
+655,sr:sport_event:66098024,"Searle, Ryan",19,20,14,20,20,20,1,20,5
+654,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+653,sr:sport_event:66098024,"Littler, Luke",19,20,19,20,20,20,17,20,17
+652,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,5
+651,sr:sport_event:66098024,"Littler, Luke",19,20,10,20,20,20,20,20,10
+650,sr:sport_event:66098024,"Searle, Ryan",19,20,14,20,20,20,1,19,20
+649,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+648,sr:sport_event:66098024,"Littler, Luke",19,20,20,20,20,20,20,20,18
+647,sr:sport_event:66098024,"Searle, Ryan",1,20,14,20,20,20,20,20,20
+646,sr:sport_event:66098024,"Searle, Ryan",20,20,1,20,20,20,1,20,20
+645,sr:sport_event:66098024,"Littler, Luke",19,20,20,20,20,20,20,20,20
+644,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,6,20,5
+643,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,18,20,BULL
+642,sr:sport_event:66098024,"Searle, Ryan",BULL,20,12,20,14,8,20,7,14
+641,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,14,14,20,7,12
+640,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,6,20,6,18,6
+639,sr:sport_event:66098024,"Searle, Ryan",20,20,4,20,20,20,20,20,5
+638,sr:sport_event:66098024,"Searle, Ryan",BULL,20,9,20,20,20,1,20,20
+637,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+636,sr:sport_event:66098024,"Littler, Luke",15,20,10,20,10,20,20,20,10
+635,sr:sport_event:66098024,"Littler, Luke",20,20,10,20,20,20,20,20,10
+634,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+633,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,19,5
+632,sr:sport_event:66098024,"Searle, Ryan",1,20,7,20,20,20,20,20,5
+631,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,5
+630,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+629,sr:sport_event:66098024,"Littler, Luke",20,20,10,20,20,20,20,20,10
+628,sr:sport_event:66098024,"Searle, Ryan",2,20,7,20,20,20,20,20,5
+627,sr:sport_event:66098024,"Searle, Ryan",20,20,4,20,20,20,20,20,5
+626,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+625,sr:sport_event:66098024,"Littler, Luke",1,20,17,20,20,20,18,20,5
+624,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,20
+623,sr:sport_event:66098024,"Searle, Ryan",20,20,1,20,20,20,1,20,20
+622,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+621,sr:sport_event:66098024,"Littler, Luke",12,20,6,20,20,20,12,20,12
+619,sr:sport_event:66098024,"Searle, Ryan",4,20,12,20,14,20,20,12,12
+617,sr:sport_event:66098024,"Searle, Ryan",19,20,7,20,14,14,20,7,14
+616,sr:sport_event:66098024,"Searle, Ryan",19,20,7,20,8,8,20,7,14
+615,sr:sport_event:66098024,"Littler, Luke",20,20,2,20,20,20,18,20,15
+614,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,20
+613,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+612,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,1,20,20
+611,sr:sport_event:66098024,"Littler, Luke",19,20,18,20,20,20,18,20,18
+610,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+609,sr:sport_event:66098024,"Searle, Ryan",19,20,7,20,20,20,20,20,5
+608,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,5,5
+607,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,5
+606,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+605,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+604,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+603,sr:sport_event:66098024,"Searle, Ryan",20,20,8,20,20,20,20,8,14
+602,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+601,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+600,sr:sport_event:66098024,"Searle, Ryan",19,20,14,20,20,20,1,19,20
+599,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,6,20,BULL
+598,sr:sport_event:66098024,"Littler, Luke",11,20,16,20,16,19,16,19,16
+597,sr:sport_event:66098024,"Searle, Ryan",18,20,12,20,14,14,20,7,12
+596,sr:sport_event:66098024,"Searle, Ryan",19,20,12,20,8,8,20,7,14
+595,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,5,20,5,5,5
+594,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+593,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+592,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+591,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+590,sr:sport_event:66098024,"Littler, Luke",19,20,2,20,19,20,17,19,15
+589,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,18,20,15
+588,sr:sport_event:66098024,"Searle, Ryan",19,20,7,20,20,20,20,20,5
+587,sr:sport_event:66098024,"Searle, Ryan",20,20,1,20,20,20,1,19,5
+586,sr:sport_event:66098024,"Littler, Luke",19,20,17,20,20,20,18,20,15
+585,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+584,sr:sport_event:66098024,"Searle, Ryan",20,20,4,20,20,20,20,20,5
+583,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+582,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,6,10,6,18,6
+581,sr:sport_event:66098024,"Littler, Luke",13,20,10,20,10,20,10,10,10
+580,sr:sport_event:66098024,"Littler, Luke",19,20,6,20,19,18,BULL,19,BULL
+579,sr:sport_event:66098024,"Searle, Ryan",19,20,7,20,20,20,20,20,5
+578,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,19,5
+577,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,6,20,6
+576,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+575,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+574,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+573,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,5,20,18
+572,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,5
+571,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,5
+570,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+569,sr:sport_event:66098024,"Littler, Luke",18,20,5,20,20,20,5,20,5
+568,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+567,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+566,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+565,sr:sport_event:66098024,"Searle, Ryan",20,20,4,20,20,20,20,20,5
+564,sr:sport_event:66098024,"Littler, Luke",18,20,5,20,20,20,5,20,5
+563,sr:sport_event:66098024,"Littler, Luke",19,20,19,20,19,20,2,19,BULL
+562,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+561,sr:sport_event:66098024,"Littler, Luke",9,20,12,20,5,20,12,20,12
+560,sr:sport_event:66098024,"Littler, Luke",18,20,10,20,10,20,10,20,10
+559,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,BULL
+558,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+557,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+556,sr:sport_event:66098024,"Searle, Ryan",1,20,14,20,20,20,1,20,5
+555,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,20
+554,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,18,20,18
+553,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+552,sr:sport_event:66098024,"Searle, Ryan",1,20,14,20,20,20,20,20,5
+551,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+550,sr:sport_event:66098024,"Littler, Luke",20,20,4,20,20,20,20,19,15
+549,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,18,20,20
+548,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,5
+547,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+546,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+545,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+544,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,20,20,15
+543,sr:sport_event:66098024,"Littler, Luke",5,20,5,20,20,20,20,20,20
+542,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+541,sr:sport_event:66098024,"Searle, Ryan",19,20,14,20,20,20,1,20,5
+540,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,5
+539,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+538,sr:sport_event:66098024,"Littler, Luke",10,20,10,20,10,20,10,20,10
+537,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+536,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,18,20,5
+535,sr:sport_event:66098024,"Littler, Luke",19,20,6,20,19,20,BULL,19,6
+534,sr:sport_event:66098024,"Searle, Ryan",1,20,14,20,20,20,20,20,5
+533,sr:sport_event:66098024,"Searle, Ryan",1,20,9,20,20,20,1,20,20
+532,sr:sport_event:66098024,"Littler, Luke",19,20,15,20,19,19,15,19,17
+531,sr:sport_event:66098024,"Littler, Luke",20,20,17,20,20,20,20,20,15
+530,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,5
+529,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+528,sr:sport_event:66098024,"Searle, Ryan",1,20,14,20,20,20,1,20,20
+527,sr:sport_event:66098024,"Searle, Ryan",20,20,1,20,20,20,1,20,20
+525,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,20
+524,sr:sport_event:66098024,"Littler, Luke",5,20,5,20,20,20,5,20,5
+523,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+522,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+521,sr:sport_event:66098024,"Searle, Ryan",20,20,1,20,20,20,1,19,20
+520,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+519,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+518,sr:sport_event:66098024,"Littler, Luke",20,20,15,20,20,20,18,20,15
+517,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+516,sr:sport_event:66098024,"Littler, Luke",20,20,12,20,20,20,12,20,12
+515,sr:sport_event:66098024,"Searle, Ryan",BULL,20,12,20,14,14,20,7,12
+513,sr:sport_event:66098024,"Littler, Luke",18,20,6,20,10,20,6,18,10
+512,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,19,14
+511,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,20
+510,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,20
+509,sr:sport_event:66098024,"Littler, Luke",18,20,6,20,20,20,18,20,15
+508,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+507,sr:sport_event:66098024,"Searle, Ryan",19,20,14,20,20,20,1,20,20
+506,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,5
+505,sr:sport_event:66098024,"Littler, Luke",19,20,18,20,20,20,18,20,18
+504,sr:sport_event:66098024,"Searle, Ryan",18,20,14,20,20,20,1,20,20
+503,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,20
+502,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,20
+501,sr:sport_event:66098024,"Littler, Luke",19,20,15,20,19,19,15,19,17
+500,sr:sport_event:66098024,"Searle, Ryan",19,20,1,20,20,20,1,19,14
+499,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,20
+498,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,5,20,5
+497,sr:sport_event:66098024,"Searle, Ryan",7,20,7,20,20,20,20,20,5
+496,sr:sport_event:66098024,"Searle, Ryan",5,20,14,20,20,20,20,20,20
+495,sr:sport_event:66098024,"Searle, Ryan",1,20,9,20,20,20,1,20,20
+494,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,5
+493,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,20
+492,sr:sport_event:66098024,"Searle, Ryan",20,20,1,20,20,20,1,20,20
+491,sr:sport_event:66098024,"Littler, Luke",10,20,10,20,10,10,10,10,10
+490,sr:sport_event:66098024,"Littler, Luke",17,20,10,20,10,10,10,10,10
+489,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,BULL,20,BULL
+488,sr:sport_event:66098024,"Searle, Ryan",18,20,7,20,20,20,20,20,5
+487,sr:sport_event:66098024,"Searle, Ryan",18,20,1,20,20,20,1,20,20
+486,sr:sport_event:66098024,"Searle, Ryan",18,20,9,20,20,20,20,20,20
+485,sr:sport_event:66098024,"Littler, Luke",20,20,7,20,20,20,20,20,5
+484,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+483,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,20,20,20
+482,sr:sport_event:66098024,"Searle, Ryan",19,20,7,20,20,20,20,20,5
+481,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+480,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+479,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,5
+478,sr:sport_event:66098024,"Searle, Ryan",17,20,7,20,20,20,20,7,5
+477,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,14
+476,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,5
+475,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+474,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,20
+473,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,18,18
+472,sr:sport_event:66098024,"Searle, Ryan",10,20,12,20,14,14,20,7,14
+471,sr:sport_event:66098024,"Littler, Luke",18,20,17,20,20,20,18,20,15
+470,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+469,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,18,20,5
+468,sr:sport_event:66098024,"Searle, Ryan",16,20,8,20,8,8,20,7,14
+467,sr:sport_event:66098024,"Searle, Ryan",10,20,7,20,20,14,20,7,12
+466,sr:sport_event:66098024,"Littler, Luke",17,20,10,20,20,20,18,20,10
+465,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,20
+464,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,5
+463,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+462,sr:sport_event:66098024,"Searle, Ryan",20,20,1,20,20,20,1,20,20
+461,sr:sport_event:66098024,"Littler, Luke",18,20,7,20,20,20,5,20,5
+459,sr:sport_event:66098024,"Littler, Luke",19,20,17,20,20,20,18,20,15
+458,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+457,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,20
+456,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+455,sr:sport_event:66098024,"Littler, Luke",19,20,19,20,19,20,19,19,BULL
+454,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+453,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+452,sr:sport_event:66098024,"Searle, Ryan",19,20,7,20,20,20,20,20,5
+451,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,5
+450,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+449,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+448,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+447,sr:sport_event:66098024,"Littler, Luke",16,20,6,20,6,BULL,6,BULL,6
+446,sr:sport_event:66098024,"Littler, Luke",18,20,6,20,20,20,10,20,15
+445,sr:sport_event:66098024,"Littler, Luke",17,20,10,20,10,20,10,10,10
+444,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+443,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+442,sr:sport_event:66098024,"Littler, Luke",19,20,19,20,19,20,17,19,BULL
+441,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,5,5
+440,sr:sport_event:66098024,"Searle, Ryan",20,20,8,20,20,20,20,8,14
+439,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+438,sr:sport_event:66098024,"Searle, Ryan",17,20,1,20,20,20,1,20,20
+437,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+436,sr:sport_event:66098024,"Littler, Luke",19,20,18,20,20,20,18,20,18
+435,sr:sport_event:66098024,"Searle, Ryan",8,20,12,20,8,8,20,7,14
+434,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,14,14,20,12,12
+433,sr:sport_event:66098024,"Littler, Luke",BULL,20,5,20,20,20,18,20,20
+432,sr:sport_event:66098024,"Littler, Luke",7,20,5,20,20,20,18,20,5
+431,sr:sport_event:66098024,"Littler, Luke",20,20,10,20,20,20,20,20,10
+430,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+429,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+428,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+427,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,20
+426,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,18,18
+425,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+424,sr:sport_event:66098024,"Searle, Ryan",18,20,9,20,20,20,20,20,20
+423,sr:sport_event:66098024,"Littler, Luke",18,20,4,20,20,20,18,20,18
+422,sr:sport_event:66098024,"Littler, Luke",18,20,17,20,20,20,20,20,15
+421,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+420,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+419,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+418,sr:sport_event:66098024,"Littler, Luke",19,20,18,20,19,20,19,20,17
+417,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,20
+416,sr:sport_event:66098024,"Searle, Ryan",18,20,12,20,20,20,20,20,5
+413,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+412,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,20
+411,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,1,20,20
+410,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,5
+409,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,20
+408,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+407,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+406,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+405,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,20
+404,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+403,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,5,20,20
+402,sr:sport_event:66098024,"Searle, Ryan",17,20,7,20,20,20,20,20,5
+401,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,12,5
+399,sr:sport_event:66098024,"Littler, Luke",7,20,15,20,19,15,15,19,10
+398,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,BULL,20,BULL
+397,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+396,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+395,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+394,sr:sport_event:66098024,"Littler, Luke",18,20,18,20,20,20,20,20,15
+393,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+392,sr:sport_event:66098024,"Littler, Luke",5,20,10,20,20,20,20,20,10
+391,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+390,sr:sport_event:66098024,"Littler, Luke",19,20,15,20,19,19,18,19,17
+389,sr:sport_event:66098024,"Littler, Luke",5,20,20,20,20,20,20,20,20
+388,sr:sport_event:66098024,"Searle, Ryan",19,20,14,20,20,20,1,20,20
+387,sr:sport_event:66098024,"Searle, Ryan",5,20,9,20,20,20,20,20,20
+386,sr:sport_event:66098024,"Littler, Luke",19,20,2,20,19,19,19,19,BULL
+385,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,20
+384,sr:sport_event:66098024,"Searle, Ryan",19,20,14,20,20,20,1,20,5
+383,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,7,5
+381,sr:sport_event:66098024,"Littler, Luke",10,20,10,20,10,20,10,10,10
+380,sr:sport_event:66098024,"Searle, Ryan",10,20,12,20,20,14,20,7,12
+379,sr:sport_event:66098024,"Searle, Ryan",19,20,7,20,14,14,20,7,14
+378,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,6,20,5
+377,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,18,20,5
+376,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,6
+375,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+374,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+373,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,19,20,18,18,18
+372,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,20
+371,sr:sport_event:66098024,"Littler, Luke",20,20,10,20,20,20,20,20,10
+370,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+369,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,1,20,20
+368,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+367,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,19,18,18,18
+366,sr:sport_event:66098024,"Searle, Ryan",2,20,9,20,20,20,1,20,20
+365,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,20
+364,sr:sport_event:66098024,"Littler, Luke",18,20,17,20,20,20,20,20,15
+363,sr:sport_event:66098024,"Littler, Luke",19,20,18,20,20,20,20,17,18
+362,sr:sport_event:66098024,"Littler, Luke",5,20,7,20,20,20,20,20,5
+361,sr:sport_event:66098024,"Searle, Ryan",5,20,9,20,20,20,20,20,20
+360,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+359,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+358,sr:sport_event:66098024,"Littler, Luke",19,20,19,20,19,19,18,19,18
+357,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,18,18
+356,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+355,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,19,5
+354,sr:sport_event:66098024,"Searle, Ryan",5,20,9,20,20,20,20,20,20
+353,sr:sport_event:66098024,"Littler, Luke",10,20,10,20,10,10,10,10,10
+351,sr:sport_event:66098024,"Littler, Luke",19,20,6,20,10,10,10,10,6
+350,sr:sport_event:66098024,"Littler, Luke",19,20,10,20,10,10,10,10,10
+348,sr:sport_event:66098024,"Littler, Luke",20,20,6,20,20,20,10,20,6
+347,sr:sport_event:66098024,"Searle, Ryan",19,20,14,20,20,20,20,20,20
+346,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+345,sr:sport_event:66098024,"Littler, Luke",19,20,3,20,19,19,19,19,18
+344,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,20
+343,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,5
+342,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,1,20,20
+341,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+339,sr:sport_event:66098024,"Littler, Luke",19,20,7,20,20,20,20,20,5
+338,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,20,18,18
+337,sr:sport_event:66098024,"Searle, Ryan",8,20,7,20,8,8,20,7,14
+336,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,20
+335,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+334,sr:sport_event:66098024,"Littler, Luke",BULL,20,5,20,20,20,5,20,5
+333,sr:sport_event:66098024,"Littler, Luke",19,20,5,20,20,20,18,20,20
+332,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+331,sr:sport_event:66098024,"Searle, Ryan",1,20,7,20,20,20,20,20,5
+330,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,19,14
+329,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,20
+328,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+327,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,19,14
+326,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,5
+325,sr:sport_event:66098024,"Searle, Ryan",20,20,20,20,20,20,20,20,1
+324,sr:sport_event:66098024,"Littler, Luke",18,20,5,20,20,20,20,20,18
+323,sr:sport_event:66098024,"Littler, Luke",19,20,5,20,20,20,5,20,5
+322,sr:sport_event:66098024,"Littler, Luke",20,20,16,20,20,20,20,19,3
+321,sr:sport_event:66098024,"Searle, Ryan",19,20,7,20,20,20,20,20,5
+320,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,20
+319,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,20
+318,sr:sport_event:66098024,"Littler, Luke",20,20,12,20,20,20,12,20,12
+317,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+316,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,19,14
+315,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,1,20,20
+314,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+313,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,5,20,5
+312,sr:sport_event:66098024,"Searle, Ryan",19,20,7,20,20,20,20,7,5
+311,sr:sport_event:66098024,"Searle, Ryan",5,20,9,20,20,20,20,20,20
+310,sr:sport_event:66098024,"Searle, Ryan",5,20,12,20,20,20,20,20,5
+309,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+308,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,20
+307,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,20
+306,sr:sport_event:66098024,"Searle, Ryan",19,20,7,20,20,20,20,20,5
+305,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+304,sr:sport_event:66098024,"Littler, Luke",19,20,17,20,20,20,18,20,18
+303,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,20
+301,sr:sport_event:66098024,"Littler, Luke",10,20,10,20,10,10,10,10,10
+300,sr:sport_event:66098024,"Littler, Luke",5,20,12,20,20,20,12,20,12
+298,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,14,16,20,7,12
+297,sr:sport_event:66098024,"Searle, Ryan",18,20,7,20,20,20,20,7,12
+296,sr:sport_event:66098024,"Littler, Luke",BULL,20,BULL,20,3,18,BULL,BULL,BULL
+295,sr:sport_event:66098024,"Littler, Luke",17,20,10,20,19,19,6,19,6
+294,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,BULL,20,18
+293,sr:sport_event:66098024,"Searle, Ryan",19,20,7,20,14,14,20,7,14
+292,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,14,8,20,7,14
+291,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,20
+290,sr:sport_event:66098024,"Littler, Luke",20,20,2,20,20,20,18,20,18
+289,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,5
+288,sr:sport_event:66098024,"Searle, Ryan",17,20,7,20,20,20,20,20,5
+287,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+286,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,5,20,20
+285,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+284,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,20,20,5
+283,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,20
+282,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,20
+281,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,5,20,5
+280,sr:sport_event:66098024,"Searle, Ryan",5,20,7,20,20,20,20,20,5
+279,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+278,sr:sport_event:66098024,"Littler, Luke",20,20,12,20,20,20,3,20,BULL
+277,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+276,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,5
+275,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+274,sr:sport_event:66098024,"Littler, Luke",BULL,20,5,20,20,20,5,20,5
+273,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,5
+272,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+271,sr:sport_event:66098024,"Searle, Ryan",20,20,8,20,20,20,20,20,1
+270,sr:sport_event:66098024,"Searle, Ryan",20,20,1,20,20,20,1,20,20
+269,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,5
+268,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,20
+267,sr:sport_event:66098024,"Littler, Luke",20,20,20,20,20,20,20,20,5
+266,sr:sport_event:66098024,"Searle, Ryan",1,20,20,20,20,20,20,20,5
+265,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,20,5
+264,sr:sport_event:66098024,"Littler, Luke",5,20,5,20,20,20,20,20,20
+263,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,18
+262,sr:sport_event:66098024,"Searle, Ryan",5,20,7,20,20,20,20,20,5
+261,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,19,5
+260,sr:sport_event:66098024,"Searle, Ryan",5,20,7,20,20,20,20,20,5
+259,sr:sport_event:66098024,"Littler, Luke",19,20,18,20,20,20,5,BULL,5
+258,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,18,20,20
+257,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,14,8,20,7,14
+256,sr:sport_event:66098024,"Searle, Ryan",16,20,7,20,8,8,20,7,14
+255,sr:sport_event:66098024,"Littler, Luke",16,20,19,20,BULL,19,7,19,BULL
+254,sr:sport_event:66098024,"Littler, Luke",19,20,17,20,19,18,BULL,19,6
+253,sr:sport_event:66098024,"Littler, Luke",19,20,19,20,19,19,BULL,19,BULL
+252,sr:sport_event:66098024,"Searle, Ryan",18,20,12,20,20,20,20,7,12
+251,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,14,14,20,7,12
+250,sr:sport_event:66098024,"Littler, Luke",18,20,18,20,20,20,5,20,5
+249,sr:sport_event:66098024,"Littler, Luke",20,20,18,20,20,20,5,20,20
+248,sr:sport_event:66098024,"Littler, Luke",19,20,10,20,20,20,20,20,10
+247,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,20,14
+246,sr:sport_event:66098024,"Searle, Ryan",20,20,14,20,20,20,1,19,5
+245,sr:sport_event:66098024,"Searle, Ryan",20,20,7,20,20,20,20,12,5
+244,sr:sport_event:66098024,"Littler, Luke",20,20,2,20,20,20,20,20,5
+243,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+242,sr:sport_event:66098024,"Littler, Luke",7,20,10,20,20,20,20,20,10
+241,sr:sport_event:66098024,"Searle, Ryan",18,20,9,20,20,20,20,20,20
+240,sr:sport_event:66098024,"Searle, Ryan",19,20,7,20,20,20,20,20,5
+239,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,5,20,5
+238,sr:sport_event:66098024,"Littler, Luke",5,20,5,20,20,20,5,20,20
+237,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+236,sr:sport_event:66098024,"Searle, Ryan",20,20,1,20,20,20,1,20,20
+235,sr:sport_event:66098024,"Littler, Luke",20,20,5,20,20,20,20,20,5
+234,sr:sport_event:66098024,"Littler, Luke",20,20,19,20,20,20,19,20,20
+233,sr:sport_event:66098024,"Searle, Ryan",17,20,7,20,20,20,20,7,5
+232,sr:sport_event:66098024,"Searle, Ryan",20,20,9,20,20,20,20,20,5
+231,sr:sport_event:66098024,"Searle, Ryan",20,20,12,20,20,20,20,20,5
+226,sr:sport_event:66098032,"van Veen, Gian",8,20,16,20,16,16,8,16,12
+225,sr:sport_event:66098032,"van Veen, Gian",8,20,16,20,16,16,16,16,12
+224,sr:sport_event:66098032,"van Veen, Gian",9,20,17,20,20,20,14,20,12
+223,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,10,20,12
+222,sr:sport_event:66098032,"Littler, Luke",18,20,4,20,10,10,4,13,12
+221,sr:sport_event:66098032,"van Veen, Gian",BULL,20,5,20,4,4,20,BULL,9
+220,sr:sport_event:66098032,"van Veen, Gian",20,20,16,20,20,20,16,20,12
+219,sr:sport_event:66098032,"van Veen, Gian",20,20,16,20,20,20,16,20,12
+218,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,18,20,18,18,12
+217,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+216,sr:sport_event:66098032,"Littler, Luke",20,20,18,20,20,20,18,20,12
+215,sr:sport_event:66098032,"Littler, Luke",20,20,18,20,20,20,18,18,12
+214,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,19,12
+213,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+212,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+211,sr:sport_event:66098032,"Littler, Luke",20,20,7,20,BULL,20,18,20,12
+210,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,18,20,12
+209,sr:sport_event:66098032,"Littler, Luke",20,20,6,20,7,7,15,20,12
+208,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,17,17,12
+207,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+206,sr:sport_event:66098032,"van Veen, Gian",8,20,16,20,16,16,16,16,12
+205,sr:sport_event:66098032,"van Veen, Gian",9,20,17,20,20,20,14,20,12
+204,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,16,20,17,13,12
+203,sr:sport_event:66098032,"Littler, Luke",BULL,20,3,20,16,16,17,16,12
+202,sr:sport_event:66098032,"van Veen, Gian",BULL,20,16,20,8,8,16,16,12
+201,sr:sport_event:66098032,"van Veen, Gian",20,20,16,20,20,20,16,20,12
+200,sr:sport_event:66098032,"Littler, Luke",20,20,6,20,13,19,17,6,12
+199,sr:sport_event:66098032,"Littler, Luke",20,20,14,20,20,20,7,20,12
+198,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,16,19,12
+197,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,16,19,12
+196,sr:sport_event:66098032,"Littler, Luke",15,20,19,20,20,20,18,19,12
+195,sr:sport_event:66098032,"Littler, Luke",5,20,5,20,20,20,20,20,12
+194,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,18,BULL,12
+193,sr:sport_event:66098032,"van Veen, Gian",18,20,17,20,20,20,BULL,20,12
+192,sr:sport_event:66098032,"van Veen, Gian",18,20,17,20,20,20,BULL,19,12
+191,sr:sport_event:66098032,"van Veen, Gian",18,20,17,20,20,20,BULL,20,12
+190,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,19,20,18,19,12
+189,sr:sport_event:66098032,"Littler, Luke",20,20,17,20,20,20,18,18,12
+188,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,17,17,12
+187,sr:sport_event:66098032,"Littler, Luke",18,20,19,20,18,20,18,BULL,12
+186,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,19,19
+185,sr:sport_event:66098032,"van Veen, Gian",17,20,17,20,20,19,BULL,19,12
+184,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,19,12
+183,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,12
+182,sr:sport_event:66098032,"Littler, Luke",19,20,19,20,19,19,BULL,19,12
+181,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,BULL,7,12
+180,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,20,19,12
+178,sr:sport_event:66098032,"Littler, Luke",20,20,9,20,20,20,14,20,12
+177,sr:sport_event:66098032,"van Veen, Gian",1,20,17,20,20,20,17,20,12
+176,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,12
+175,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+174,sr:sport_event:66098032,"Littler, Luke",10,20,10,20,10,10,10,13,12
+173,sr:sport_event:66098032,"Littler, Luke",19,20,10,20,16,16,17,16,12
+171,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,20,19,15,12
+170,sr:sport_event:66098032,"van Veen, Gian",1,20,17,20,20,20,19,20,12
+169,sr:sport_event:66098032,"Littler, Luke",19,20,7,20,19,19,19,17,12
+168,sr:sport_event:66098032,"Littler, Luke",5,20,19,20,20,20,18,20,12
+167,sr:sport_event:66098032,"Littler, Luke",20,20,18,20,20,20,18,20,12
+166,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,20,20,19,17,12
+165,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+164,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,18,20,18,18,12
+163,sr:sport_event:66098032,"Littler, Luke",20,20,17,20,19,19,18,19,12
+162,sr:sport_event:66098032,"van Veen, Gian",5,20,17,20,20,20,BULL,20,12
+161,sr:sport_event:66098032,"van Veen, Gian",1,20,17,20,20,20,19,20,12
+160,sr:sport_event:66098032,"Littler, Luke",20,20,5,20,20,20,18,20,12
+159,sr:sport_event:66098032,"Littler, Luke",20,20,7,20,18,20,18,20,12
+158,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,20,20,12
+157,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,19,20,12
+156,sr:sport_event:66098032,"Littler, Luke",10,20,3,20,10,10,3,10,12
+155,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,16,20,12
+154,sr:sport_event:66098032,"van Veen, Gian",BULL,20,15,20,20,19,16,19,12
+153,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,16,17,12
+152,sr:sport_event:66098032,"Littler, Luke",BULL,20,3,20,4,10,3,10,12
+151,sr:sport_event:66098032,"Littler, Luke",17,20,3,20,3,19,17,3,12
+150,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,17,20,12
+149,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,18,20,12
+148,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,5,20,12
+147,sr:sport_event:66098032,"Littler, Luke",20,20,20,20,20,20,5,18,19
+146,sr:sport_event:66098032,"Littler, Luke",20,20,6,20,20,20,6,20,19
+145,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+144,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,20,20,12
+143,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,18,18,12
+142,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,18,20,12
+141,sr:sport_event:66098032,"van Veen, Gian",19,20,17,20,19,19,17,17,12
+140,sr:sport_event:66098032,"van Veen, Gian",20,20,BULL,20,20,20,19,18,12
+136,sr:sport_event:66098032,"van Veen, Gian",20,20,19,20,20,20,19,20,12
+135,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,18,BULL,12
+134,sr:sport_event:66098032,"Littler, Luke",20,20,18,20,20,20,18,BULL,12
+133,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,17,20,12
+132,sr:sport_event:66098032,"van Veen, Gian",16,20,17,20,16,19,16,19,12
+131,sr:sport_event:66098032,"Littler, Luke",5,20,19,20,20,20,BULL,19,12
+130,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,19,20,12
+129,sr:sport_event:66098032,"van Veen, Gian",BULL,20,17,20,20,20,19,20,12
+128,sr:sport_event:66098032,"Littler, Luke",20,20,7,20,20,20,18,19,12
+126,sr:sport_event:66098032,"Littler, Luke",20,20,17,20,20,20,18,18,12
+125,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+124,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,20,20,12
+123,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,20,19,12
+122,sr:sport_event:66098032,"Littler, Luke",20,20,19,20,20,20,BULL,19,12
+121,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,7,12
+120,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,20,12
+119,sr:sport_event:66098032,"van Veen, Gian",20,20,17,20,20,20,BULL,19,12
+54,sr:sport_event:66098028,"Anderson, Gary",19,20,14,20,20,20,9,17,9
+53,sr:sport_event:66098028,"Anderson, Gary",16,20,14,20,20,20,9,1,9
+52,sr:sport_event:66098028,"Anderson, Gary",9,20,14,20,20,20,5,1,5
+51,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+50,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,19,20,19
+49,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+48,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+47,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+46,sr:sport_event:66098028,"van Veen, Gian",20,20,15,20,4,19,15,19,15
+45,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,9,20,5
+44,sr:sport_event:66098028,"Anderson, Gary",16,20,9,20,18,20,9,17,9
+43,sr:sport_event:66098028,"van Veen, Gian",13,20,3,20,18,18,3,19,BULL
+42,sr:sport_event:66098028,"van Veen, Gian",8,20,8,20,16,16,11,8,8
+41,sr:sport_event:66098028,"Anderson, Gary",18,20,9,20,20,20,20,20,5
+40,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,18,20,5
+39,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,5,20,5
+38,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,19,1
+37,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+36,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,19,1
+35,sr:sport_event:66098028,"van Veen, Gian",20,20,19,20,19,20,19,19,17
+34,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+33,sr:sport_event:66098028,"Anderson, Gary",20,20,4,20,20,20,20,20,20
+32,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+31,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,3,3,3,19,3
+30,sr:sport_event:66098028,"Anderson, Gary",17,20,18,20,20,20,18,18,5
+29,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,20,20,5
+28,sr:sport_event:66098028,"Anderson, Gary",17,20,18,20,20,20,18,18,5
+27,sr:sport_event:66098028,"Anderson, Gary",20,20,18,20,20,20,5,20,5
+26,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,5,20,5
+25,sr:sport_event:66098028,"van Veen, Gian",20,20,14,20,20,20,9,12,9
+24,sr:sport_event:66098028,"van Veen, Gian",20,20,3,20,20,20,16,16,16
+23,sr:sport_event:66098028,"van Veen, Gian",20,20,9,20,20,20,16,16,14
+22,sr:sport_event:66098028,"Anderson, Gary",16,20,9,20,20,20,18,20,5
+21,sr:sport_event:66098028,"Anderson, Gary",19,20,14,20,20,20,9,19,9
+20,sr:sport_event:66098028,"Anderson, Gary",1,20,14,20,20,20,20,20,5
+19,sr:sport_event:66098028,"Anderson, Gary",20,20,1,20,20,20,20,20,20
+18,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+17,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,19,19,19
+16,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,20,1
+15,sr:sport_event:66098028,"Anderson, Gary",19,20,9,20,20,20,1,20,1
+14,sr:sport_event:66098028,"Anderson, Gary",20,20,5,20,20,20,20,20,5
+13,sr:sport_event:66098028,"van Veen, Gian",20,20,20,20,20,20,1,19,1
+12,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+11,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+10,sr:sport_event:66098028,"Anderson, Gary",19,20,5,20,20,20,18,20,20
+9,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,5,20,5
+8,sr:sport_event:66098028,"Anderson, Gary",20,20,9,20,20,20,5,20,5
+7,sr:sport_event:66098028,"van Veen, Gian",20,20,5,20,20,20,1,20,1
+6,sr:sport_event:66098028,"van Veen, Gian",20,20,1,20,20,20,1,20,1
+4,sr:sport_event:66098028,"van Veen, Gian",20,20,5,20,20,20,1,20,1

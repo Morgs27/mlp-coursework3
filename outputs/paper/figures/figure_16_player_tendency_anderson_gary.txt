@@ -1,0 +1,5 @@
+Caption:
+Figure 16. Anderson, Gary side-by-side gaze tendency panels by match and in aggregate.
+
+Explanation:
+This panel contains 313 valid-face rows for Anderson, Gary. The highlighted wedges 5, 7, 16, 18, 19, 20 account for 276 rows (88.2% of this player's modeling data). The match-specific panels are 66098028 (n=313), followed by a combined panel that overlays all matches using distinct markers. Large translucent disks mark per-wedge average gaze position, and the strongest highlighted counts are 20 (n=206), 19 (n=32), 18 (n=14), 16 (n=9).

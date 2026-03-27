@@ -1,0 +1,5 @@
+Caption:
+Figure 7. Trade-off between coarse 3-wedge targeting and exact wedge discrimination.
+
+Explanation:
+`random_forest` sits at the top-right for 3-wedge accuracy with 0.743, but its macro-F1 remains only 0.104, indicating weak exact-wedge discrimination. `mlp_deep` provides the best exact-label discrimination in this comparison with macro-F1 0.151 at 3-wedge accuracy 0.686, which makes it the most defensible learned trade-off model.

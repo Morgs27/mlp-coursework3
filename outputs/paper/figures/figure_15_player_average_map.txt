@@ -1,0 +1,5 @@
+Caption:
+Figure 15. Combined player-average gaze map for the dominant wedge areas in the modeling subset.
+
+Explanation:
+This figure overlays per-player wedge centroids for the highlighted areas 1, 5, 18, 19, 20, BULL. These wedges account for 1538 of 1725 valid-face rows (89.2%). Black markers denote each player's overall gaze center, and colored centroid markers show how each player's typical gaze location shifts relative to that center for the most common wedge targets.

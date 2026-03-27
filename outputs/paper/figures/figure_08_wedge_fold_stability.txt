@@ -1,0 +1,5 @@
+Caption:
+Figure 8. Match-wise stability of 3-wedge accuracy for the strongest wedge models.
+
+Explanation:
+The figure plots the strongest non-majority models by held-out-match three wedge accuracy. random_forest: mean 0.743, range 0.723-0.762 ; extra_trees: mean 0.736, range 0.712-0.753 ; knn: mean 0.697, range 0.686-0.707 ; mlp_deep: mean 0.687, range 0.664-0.712. The spread across folds shows that current performance is still sensitive to match composition and limited sample size.

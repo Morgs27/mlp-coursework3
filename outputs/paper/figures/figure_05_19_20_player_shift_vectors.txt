@@ -1,0 +1,5 @@
+Caption:
+Figure 5. Within-player centered gaze shift from wedge 19 to wedge 20.
+
+Explanation:
+The arrows join each player's centered 19 cluster to their centered 20 cluster. The largest separation is for van Veen with a centroid distance of 0.080 normalized gaze units (Δx=-0.006, Δy=-0.080), while the smallest separation is for Littler at 0.051. This figure gives the clearest qualitative evidence that the reranker task is driven by within-player relative shifts rather than a single global gaze location.

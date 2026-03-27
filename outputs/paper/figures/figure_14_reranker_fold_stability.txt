@@ -1,0 +1,5 @@
+Caption:
+Figure 14. Match-wise stability of ROC-AUC for the strongest reranker models.
+
+Explanation:
+The figure plots the strongest non-majority models by held-out-match roc auc. random_forest: mean 0.839, range 0.751-0.940 ; logistic: mean 0.836, range 0.773-0.926 ; extra_trees: mean 0.835, range 0.727-0.951 ; torch_deep: mean 0.819, range 0.744-0.959. The spread across folds shows that current performance is still sensitive to match composition and limited sample size.

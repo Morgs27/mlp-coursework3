@@ -1,0 +1,5 @@
+Caption:
+Figure 3. Long-tail distribution of wedge labels in the valid-face modeling subset.
+
+Explanation:
+Wedge 20 dominates the dataset with 1108 rows (64.2%), followed by wedge 19 with 226 rows (13.1%). Together, wedges 19 and 20 account for 1334 of 1725 rows (77.3%). The top ten wedge labels cover 1653 rows (95.8%), leaving only 72 rows (4.2%) in the remaining tail.

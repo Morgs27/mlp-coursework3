@@ -1,0 +1,5 @@
+Caption:
+Figure 2. Heatmap of valid-face modeling rows by player and match.
+
+Explanation:
+The modeling subset covers 4 players across 3 matches. The largest player contribution is Littler, Luke with 588 of 1725 rows (34.1%), while match 66098032 contributes 596 rows (34.6%). The single densest player-match cell is Anderson, Gary in 66098028 with 313 rows, illustrating that the present dataset is still heavily concentrated in a few strata.

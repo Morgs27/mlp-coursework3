@@ -112,6 +112,12 @@ body {
 .status-pill.ok   { background: var(--green-glow); color: var(--green); }
 .status-pill.warn { background: var(--coral-glow); color: var(--coral); }
 
+.btn.live-active {
+  background: var(--green-glow);
+  color: var(--green);
+  border-color: rgba(63, 185, 80, 0.35);
+}
+
 /* ═══ APP LAYOUT ═══ */
 #app-layout {
   display: grid;
@@ -423,6 +429,20 @@ button:disabled, .btn:disabled {
 .drop-label em { color: var(--accent); font-style: normal; }
 .drop-hint { font-size: 11px; color: var(--green); font-weight: 500; min-height: 14px; }
 
+.period-header {
+  padding: 8px;
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 4px 0;
+}
+
 /* ═══ DIVIDER ═══ */
 .divider {
   display: flex;
@@ -713,6 +733,23 @@ button:disabled, .btn:disabled {
   overflow-y: auto;
   flex: 1;
   min-height: 0;
+  padding-right: 4px;
+}
+
+/* Custom scrollbar for better visibility */
+.scroll-area::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll-area::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.scroll-area::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+.scroll-area::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
 }
 
 /* Capture cards in right panel */
@@ -722,6 +759,7 @@ button:disabled, .btn:disabled {
   border-radius: var(--radius);
   overflow: hidden;
   margin-bottom: 8px;
+  flex-shrink: 0;
   transition: border-color var(--transition), box-shadow var(--transition);
 }
 
@@ -805,9 +843,24 @@ button:disabled, .btn:disabled {
 
 .capture-footer {
   display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 8px 8px;
+}
+
+.capture-footer-top {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 8px 6px;
+}
+
+.capture-footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(139, 148, 158, 0.2);
 }
 
 .capture-status-badge {
@@ -828,6 +881,27 @@ button:disabled, .btn:disabled {
 .capture-actions {
   display: flex;
   gap: 4px;
+}
+
+.btn-preview-capture {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 8px;
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 4px;
+  background: var(--bg-card);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.btn-preview-capture:hover {
+  background: rgba(188, 140, 255, 0.12);
+  color: var(--purple);
+  border-color: rgba(188, 140, 255, 0.25);
 }
 
 .btn-delete-capture {
@@ -885,6 +959,71 @@ button:disabled, .btn:disabled {
 
 .list-item, .capture-card {
   animation: fade-in 200ms ease both;
+}
+
+/* ═══ MODAL ═══ */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 8, 15, 0.74);
+  backdrop-filter: blur(10px);
+}
+
+.modal-panel {
+  position: relative;
+  width: min(92vw, 1100px);
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-header h2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.modal-body {
+  padding: 18px;
+  overflow: auto;
+  background:
+    radial-gradient(circle at top right, rgba(88, 166, 255, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(22, 27, 34, 0.98), rgba(13, 17, 23, 0.98));
+}
+
+.modal-body img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg);
 }
 
 /* ═══ RESPONSIVE ═══ */

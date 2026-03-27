@@ -22,9 +22,11 @@ dependencies = [
 ]
 
 [project.scripts]
+darts-gaze = "darts_gaze.cli:main"
 darts-gaze-annotate = "darts_gaze.cli:annotate_main"
 darts-gaze-build-dataset = "darts_gaze.cli:build_dataset_main"
 darts-gaze-train-baselines = "darts_gaze.cli:train_baselines_main"
+darts-gaze-evaluate = "darts_gaze.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

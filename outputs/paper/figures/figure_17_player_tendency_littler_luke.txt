@@ -1,0 +1,5 @@
+Caption:
+Figure 17. Littler, Luke side-by-side gaze tendency panels by match and in aggregate.
+
+Explanation:
+This panel contains 588 valid-face rows for Littler, Luke. The highlighted wedges 5, 10, 18, 19, 20, BULL account for 528 rows (89.8% of this player's modeling data). The match-specific panels are 66098032 (n=308), and 66098024 (n=280), followed by a combined panel that overlays all matches using distinct markers. Large translucent disks mark per-wedge average gaze position, and the strongest highlighted counts are 20 (n=365), 19 (n=87), 5 (n=25), 18 (n=21).
