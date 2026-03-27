@@ -663,9 +663,8 @@ def _save_player_shift_vectors(reranker_df: pd.DataFrame, output_path: Path) -> 
         point_20 = by_label.loc["20"] - center
         color = cmap(index % 10)
         axis.scatter(point_19["average_gaze_x"], point_19["average_gaze_y"], marker="s", s=90, color=color, edgecolors=PALETTE["ink"], linewidths=0.8)
-        axis.scatter(point_20["average_gaze_x"], point_20["average_gaze_y"], marker="o", s=90, color=color, edgecolors=PALETTE["ink"], linewidths=0.8)
+        axis.scatter(point_20["average_gaze_x"], point_20["average_gaze_y"], marker="o", s=90, color=color, edgecolors=PALETTE["ink"], linewidths=0.8, label=player_name.split(",")[0])
         axis.annotate("", xy=(point_20["average_gaze_x"], point_20["average_gaze_y"]), xytext=(point_19["average_gaze_x"], point_19["average_gaze_y"]), arrowprops={"arrowstyle": "->", "linewidth": 2, "color": color})
-        axis.text(point_20["average_gaze_x"] + 0.01, point_20["average_gaze_y"], player_name.split(",")[0], color=PALETTE["ink"], fontsize=10)
 
     axis.axhline(0, color=PALETTE["steel"], linestyle="--", alpha=0.5)
     axis.axvline(0, color=PALETTE["steel"], linestyle="--", alpha=0.5)
@@ -673,6 +672,17 @@ def _save_player_shift_vectors(reranker_df: pd.DataFrame, output_path: Path) -> 
     axis.set_ylabel("Centered Vertical Gaze")
     axis.set_title("Within-Player Gaze Shift From 19 To 20")
     axis.invert_yaxis()
+    axis.invert_xaxis()
+
+    player_handles, player_labels = axis.get_legend_handles_labels()
+    marker_handles = [
+        Line2D([0], [0], marker="s", color="w", markerfacecolor=PALETTE["steel"], markeredgecolor=PALETTE["ink"], markersize=10, label="19"),
+        Line2D([0], [0], marker="o", color="w", markerfacecolor=PALETTE["steel"], markeredgecolor=PALETTE["ink"], markersize=10, label="20"),
+    ]
+    target_legend = axis.legend(handles=marker_handles, title="Target", loc="upper left", bbox_to_anchor=(1.02, 1))
+    axis.add_artist(target_legend)
+    axis.legend(handles=player_handles, labels=player_labels, title="Player", loc="upper left", bbox_to_anchor=(1.02, 0.8))
+
     figure.tight_layout()
     _save_figure(figure, output_path)
     plt.close(figure)
