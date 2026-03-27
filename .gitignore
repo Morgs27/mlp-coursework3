@@ -13,3 +13,5 @@ data/videos/*
 !data/processed/.gitkeep
 !data/captures/.gitkeep
 !data/videos/.gitkeep
+
+.env
